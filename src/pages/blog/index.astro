@@ -1,0 +1,29 @@
+---
+import { useStoryblokApi } from '@storyblok/astro';
+
+const storyblokApi = useStoryblokApi();
+const { data } = await storyblokApi.get('cdn/stories', {
+  version: 'draft',
+  starts_with: 'blog/',
+  content_type: 'blogPost',
+});
+const posts = data.stories;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <h1>Blog</h1>
+    <ul>
+      {posts.map((post) => (
+        <li>
+          <a href={`/${post.full_slug}`}>{post.content.title}</a>
+          {post.content.excerpt && <p>{post.content.excerpt}</p>}
+        </li>
+      ))}
+    </ul>
+  </body>
+</html>

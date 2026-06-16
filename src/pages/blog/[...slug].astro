@@ -1,0 +1,33 @@
+---
+import { useStoryblokApi } from '@storyblok/astro';
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro';
+
+export async function getStaticPaths() {
+  const storyblokApi = useStoryblokApi();
+  const { data } = await storyblokApi.get('cdn/stories', {
+    version: 'draft',
+    starts_with: 'blog/',
+    content_type: 'blogPost',
+  });
+  return data.stories.map((story) => ({
+    params: { slug: story.slug },
+    props: { story },
+  }));
+}
+
+const { story } = Astro.props;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>{story.content.meta_title || story.content.title}</title>
+    {story.content.meta_description && (
+      <meta name="description" content={story.content.meta_description} />
+    )}
+  </head>
+  <body>
+    <StoryblokComponent blok={story.content} />
+    <p><a href="/blog">Zurück zum Blog</a></p>
+  </body>
+</html>
