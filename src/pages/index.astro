@@ -1,24 +1,14 @@
 ---
-import { useStoryblokApi } from '@storyblok/astro';
-
-const storyblokApi = useStoryblokApi();
-const { data } = await storyblokApi.get('cdn/stories', {
-  version: 'draft',
-});
-console.log('STORYBLOK DATA:', JSON.stringify(data, null, 2));
-const stories = (data?.stories ?? []) as any[];
 ---
-
-<html lang="es">
+<!doctype html>
+<html lang="de">
   <head>
     <meta charset="utf-8" />
-    <title>Test de conexion Storyblok</title>
+    <meta http-equiv="refresh" content="0; url=/blog" />
+    <link rel="canonical" href="/blog" />
+    <title>Paktum Blog</title>
   </head>
   <body>
-    <h1>Conexion con Storyblok</h1>
-    <p>Stories encontradas: {stories.length}</p>
-    <ul>
-      {stories.map((story) => <li>{story.name} ({story.full_slug})</li>)}
-    </ul>
+    <p>Weiterleitung zum <a href="/blog">Blog</a> …</p>
   </body>
 </html>
