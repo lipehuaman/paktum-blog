@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { useStoryblokApi } from '@storyblok/astro';
 
 const storyblokApi = useStoryblokApi();
@@ -7,22 +7,23 @@ const { data } = await storyblokApi.get('cdn/stories', {
   version: import.meta.env.DEV ? 'draft' : 'published',
   starts_with: 'blog/',
   content_type: 'blogPost',
+  language: 'en',
 });
-const posts = data.stories;
+const posts = data.stories.filter((s) => s.content.available_en);
 
 function formatDate(d) {
-  return d ? new Date(d).toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' }) : '';
+  return d ? new Date(d).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' }) : '';
 }
 ---
-<BaseLayout title="Blog · Paktum" description="Insights und Updates rund um Sponsoring von Paktum." lang="de" deUrl="/blog" enUrl="/blog/en">
+<BaseLayout title="Blog · Paktum" description="Insights and updates on sponsorship from Paktum." lang="en" deUrl="/blog" enUrl="/blog/en">
   <section class="blog-hero container">
     <p class="eyebrow">Paktum Blog</p>
-    <h1>Sponsoring, <span class="accent">neu gedacht</span>.</h1>
-    <p class="lead">Insights, Praxistipps und Updates rund um die Verwaltung deines Sponsorings.</p>
+    <h1>Sponsoring, <span class="accent">reimagined</span>.</h1>
+    <p class="lead">Insights, practical tips and updates on managing your sponsorship.</p>
   </section>
   <section class="blog-grid container">
     {posts.map((post) => (
-      <a class="post-card" href={`/blog/${post.slug}`}>
+      <a class="post-card" href={`/blog/en/${post.slug}`}>
         {post.content.cover?.filename && (
           <div class="post-card-media"><img src={`${post.content.cover.filename}/m/800x450`} alt={post.content.cover.alt || post.content.title} /></div>
         )}

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPost from '../../storyblok/BlogPost.astro';
 import { useStoryblokApi } from '@storyblok/astro';
-import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro';
 
 export async function getStaticPaths() {
   const storyblokApi = useStoryblokApi();
@@ -18,16 +18,9 @@ export async function getStaticPaths() {
 
 const { story } = Astro.props;
 const c = story.content;
+const enUrl = c.available_en ? `/blog/en/${story.slug}` : null;
 ---
-<BaseLayout title={`${c.meta_title || c.title} · Paktum`} description={c.meta_description || c.excerpt || ''}>
-  <StoryblokComponent blok={c} />
-  <div class="article-foot">
-    <a class="back-link" href="/blog">← Zurück zum Blog</a>
-  </div>
+<BaseLayout title={`${c.meta_title || c.title} · Paktum`} description={c.meta_description || c.excerpt || ''} lang="de" deUrl={`/blog/${story.slug}`} enUrl={enUrl}>
+  <BlogPost blok={c} lang="de" />
+  <div class="article-foot"><a class="back-link" href="/blog">← Zurück zum Blog</a></div>
 </BaseLayout>
-
-<style>
-  .article-foot { max-width: 720px; margin: 0 auto; padding: 32px; margin-bottom: 48px; }
-  .back-link { color: var(--color-primary); text-decoration: none; font-weight: 600; font-size: 15px; }
-  .back-link:hover { text-decoration: underline; }
-</style>

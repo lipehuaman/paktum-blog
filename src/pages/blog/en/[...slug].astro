@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BlogPost from '../../../storyblok/BlogPost.astro';
+import { useStoryblokApi } from '@storyblok/astro';
+
+export async function getStaticPaths() {
+  const storyblokApi = useStoryblokApi();
+  const { data } = await storyblokApi.get('cdn/stories', {
+    version: import.meta.env.DEV ? 'draft' : 'published',
+    starts_with: 'blog/',
+    content_type: 'blogPost',
+    language: 'en',
+  });
+  return data.stories
+    .filter((story) => story.content.available_en)
+    .map((story) => ({
+      params: { slug: story.slug },
+      props: { story },
+    }));
+}
+
+const { story } = Astro.props;
+const c = story.content;
+---
+<BaseLayout title={`${c.meta_title || c.title} · Paktum`} description={c.meta_description || c.excerpt || ''} lang="en" deUrl={`/blog/${story.slug}`} enUrl={`/blog/en/${story.slug}`}>
+  <BlogPost blok={c} lang="en" />
+  <div class="article-foot"><a class="back-link" href="/blog/en">← Back to blog</a></div>
+</BaseLayout>

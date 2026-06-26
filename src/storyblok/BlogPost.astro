@@ -1,14 +1,15 @@
 ---
 import { storyblokEditable, renderRichText } from '@storyblok/astro';
 
-const { blok } = Astro.props;
+const { blok, lang = 'de' } = Astro.props;
 const bodyHtml = blok.body ? renderRichText(blok.body) : '';
+const locale = lang === 'en' ? 'en-GB' : 'de-DE';
 const date = blok.published_date
-  ? new Date(blok.published_date).toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' })
+  ? new Date(blok.published_date).toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })
   : '';
 ---
 <article class="article" {...storyblokEditable(blok)}>
-  <header class="article-head">
+  <header>
     {blok.category && <span class="article-cat">{blok.category}</span>}
     <h1>{blok.title}</h1>
     {blok.excerpt && <p class="article-lead">{blok.excerpt}</p>}
@@ -23,25 +24,3 @@ const date = blok.published_date
   )}
   {bodyHtml && <div class="article-body" set:html={bodyHtml} />}
 </article>
-
-<style>
-  .article { max-width: 720px; margin: 0 auto; padding: 150px 32px 0; }
-  .article-head { margin-bottom: 8px; }
-  .article-cat { display: inline-block; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-primary); background: var(--color-primary-soft); padding: 5px 12px; border-radius: 100px; margin-bottom: 20px; }
-  .article-head h1 { font-size: clamp(34px, 5vw, 54px); font-weight: 700; line-height: 1.08; letter-spacing: -0.01em; }
-  .article-lead { margin-top: 20px; font-size: 20px; line-height: 1.5; color: var(--color-text-secondary); }
-  .article-meta { margin-top: 24px; display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--color-text-muted); }
-  .article-cover { margin: 40px 0; border-radius: 20px; overflow: hidden; }
-  .article-cover img { width: 100%; height: auto; }
-  .article-body { font-size: 18px; line-height: 1.75; color: var(--color-text-primary); padding-bottom: 24px; }
-  .article-body :global(h2) { font-size: 30px; font-weight: 700; line-height: 1.2; margin: 48px 0 16px; letter-spacing: -0.01em; }
-  .article-body :global(h3) { font-size: 23px; font-weight: 700; line-height: 1.25; margin: 36px 0 12px; }
-  .article-body :global(p) { margin: 0 0 24px; }
-  .article-body :global(a) { color: var(--color-primary); text-decoration: underline; text-underline-offset: 3px; }
-  .article-body :global(ul) { margin: 0 0 24px 24px; }
-  .article-body :global(ol) { margin: 0 0 24px 24px; }
-  .article-body :global(li) { margin-bottom: 8px; }
-  .article-body :global(img) { width: 100%; border-radius: 16px; margin: 32px 0; }
-  .article-body :global(blockquote) { margin: 32px 0; padding: 8px 0 8px 24px; border-left: 3px solid var(--color-primary); font-size: 21px; line-height: 1.5; color: var(--color-ink-soft); font-style: italic; }
-  @media (max-width: 640px) { .article { padding-top: 120px; } .article-body { font-size: 17px; } }
-</style>
