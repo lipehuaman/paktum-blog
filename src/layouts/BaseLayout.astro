@@ -21,6 +21,17 @@ const blogIndex = lang === 'en' ? '/blog/en' : '/blog';
     <link rel="alternate" hreflang="de" href={SITE + deUrl} />
     {enUrl && <link rel="alternate" hreflang="en" href={SITE + enUrl} />}
     <link rel="alternate" hreflang="x-default" href={SITE + deUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={SITE + canonicalPath} />
+    <meta property="og:image" content={`${SITE}/og-image.png`} />
+    <meta property="og:site_name" content="Paktum" />
+    <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'de_DE'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${SITE}/og-image.png`} />
 
     <script is:inline src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
     <script is:inline id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="vroPjhUClfR6mc" async></script>
