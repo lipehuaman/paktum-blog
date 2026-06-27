@@ -136,6 +136,23 @@ const blogIndex = lang === 'en' ? '/blog/en' : '/blog';
       @media (max-width: 880px) { .nav-links { display: none; } .nav-lang { display: none; } .nav-actions .btn-cta { display: none; } .hamburger-btn { display: flex; } .lang-floating { display: flex; } }
       @media (max-width: 720px) { .footer-cols { grid-template-columns: 1fr; gap: 40px; } }
       @media (max-width: 640px) { .blog-grid { grid-template-columns: 1fr; } .blog-hero { padding-top: 130px; } .article { padding-top: 120px; } .article-body { font-size: 17px; } }
+
+      .nav-lang { position: relative; display: flex; align-items: center; gap: 0; }
+      .lang-trigger { display: inline-flex; align-items: center; gap: 6px; background: transparent; border: none; cursor: pointer; color: rgba(244,242,238,0.7); font-family: inherit; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 8px; border-radius: 100px; transition: color 0.2s; }
+      .lang-trigger:hover { color: #fff; }
+      .lang-trigger .lang-globe { width: 15px; height: 15px; opacity: 0.7; flex-shrink: 0; }
+      .lang-trigger .lang-caret { width: 9px; height: 9px; opacity: 0.6; flex-shrink: 0; transition: transform 0.2s, color 0.2s; }
+      .nav-lang.open .lang-trigger .lang-caret, .lang-floating.open .lang-trigger .lang-caret { transform: rotate(180deg); color: var(--color-primary); opacity: 1; }
+      .lang-menu { position: absolute; top: calc(100% + 8px); right: 0; min-width: 140px; background: #15101F; border: 1px solid rgba(244,242,238,0.12); border-radius: 12px; padding: 4px; display: none; flex-direction: column; box-shadow: 0 12px 32px rgba(10,6,18,0.4); z-index: 200; }
+      .nav-lang.open .lang-menu, .lang-floating.open .lang-menu { display: flex; }
+      .lang-menu .lang-btn { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 12px; border-radius: 8px; color: rgba(244,242,238,0.7); text-decoration: none; font-family: inherit; font-size: 13px; font-weight: 400; letter-spacing: 0; text-transform: none; transition: background 0.15s, color 0.15s; }
+      .lang-menu .lang-btn:hover { background: rgba(255,255,255,0.06); color: #fff; }
+      .lang-menu .lang-btn.active { color: var(--color-primary); font-weight: 500; background: rgba(151,14,251,0.12); }
+      .lang-menu .lang-check { width: 14px; height: 14px; opacity: 0; flex-shrink: 0; }
+      .lang-menu .lang-btn.active .lang-check { opacity: 1; }
+      .lang-floating { position: fixed; bottom: 16px; right: 16px; z-index: 101; display: none; padding: 0; background: transparent; border: none; box-shadow: none; }
+      .lang-floating .lang-trigger { background: rgba(10,6,18,0.92); border: 1px solid rgba(244,242,238,0.15); box-shadow: 0 8px 24px rgba(10,6,18,0.25); padding: 8px 14px; }
+      .lang-floating .lang-menu { top: auto; bottom: calc(100% + 8px); right: 0; }
     </style>
   </head>
   <body>
@@ -151,9 +168,11 @@ const blogIndex = lang === 'en' ? '/blog/en' : '/blog';
       </ul>
       <div class="nav-actions">
         <div class="nav-lang">
-          <a href={enUrl ? enUrl : '/blog/en'} class={lang === 'en' ? 'active' : ''}>EN</a>
-          <span class="sep">/</span>
-          <a href={deUrl} class={lang === 'de' ? 'active' : ''}>DE</a>
+          <button type="button" class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Sprache waehlen"><svg class="lang-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 16 0 18M12 3c-2.5 2.5-2.5 16 0 18"/></svg><span class="lang-current">{lang === 'en' ? 'EN' : 'DE'}</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="lang-menu">
+            <a href={deUrl} class={lang === 'de' ? 'lang-btn active' : 'lang-btn'}><span>Deutsch</span><svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></a>
+            <a href={enUrl ? enUrl : '/blog/en'} class={lang === 'en' ? 'lang-btn active' : 'lang-btn'}><span>English</span><svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></a>
+          </div>
         </div>
         <a href="https://www.paktum.ch/book-a-demo" class="btn-cta">Book a demo</a>
         <button class="hamburger-btn" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -169,9 +188,11 @@ const blogIndex = lang === 'en' ? '/blog/en' : '/blog';
       <a href="https://www.paktum.ch/book-a-demo" class="btn-cta" style="text-align:center; margin-top:8px;">Book a demo</a>
     </div>
     <div class="lang-floating">
-      <a href={enUrl ? enUrl : '/blog/en'} class={lang === 'en' ? 'active' : ''}>EN</a>
-      <span class="sep">/</span>
-      <a href={deUrl} class={lang === 'de' ? 'active' : ''}>DE</a>
+      <button type="button" class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Sprache waehlen"><svg class="lang-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 16 0 18M12 3c-2.5 2.5-2.5 16 0 18"/></svg><span class="lang-current">{lang === 'en' ? 'EN' : 'DE'}</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="lang-menu">
+            <a href={deUrl} class={lang === 'de' ? 'lang-btn active' : 'lang-btn'}><span>Deutsch</span><svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></a>
+            <a href={enUrl ? enUrl : '/blog/en'} class={lang === 'en' ? 'lang-btn active' : 'lang-btn'}><span>English</span><svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></a>
+      </div>
     </div>
     <main><slot /></main>
     <footer class="site-footer">
@@ -211,6 +232,20 @@ const blogIndex = lang === 'en' ? '/blog/en' : '/blog';
             hb.setAttribute('aria-expanded', open ? 'true' : 'false');
           });
         }
+        document.querySelectorAll('.lang-trigger').forEach(function(trigger){
+          trigger.addEventListener('click', function(e){
+            e.preventDefault(); e.stopPropagation();
+            var container = trigger.closest('.nav-lang, .lang-floating');
+            var willOpen = !container.classList.contains('open');
+            document.querySelectorAll('.nav-lang, .lang-floating').forEach(function(c){ c.classList.remove('open'); });
+            document.querySelectorAll('.lang-trigger').forEach(function(t){ t.setAttribute('aria-expanded','false'); });
+            if (willOpen) { container.classList.add('open'); trigger.setAttribute('aria-expanded','true'); }
+          });
+        });
+        document.addEventListener('click', function(){
+          document.querySelectorAll('.nav-lang, .lang-floating').forEach(function(c){ c.classList.remove('open'); });
+          document.querySelectorAll('.lang-trigger').forEach(function(t){ t.setAttribute('aria-expanded','false'); });
+        });
       })();
     </script>
   </body>
