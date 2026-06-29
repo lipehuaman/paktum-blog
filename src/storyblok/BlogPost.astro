@@ -3,7 +3,7 @@ import { storyblokEditable, renderRichText } from '@storyblok/astro';
 
 const { blok, lang = 'de' } = Astro.props;
 const bodyHtml = blok.body ? renderRichText(blok.body) : '';
-const locale = lang === 'en' ? 'en-GB' : 'de-DE';
+const locale = lang === 'en' ? 'en-GB' : lang === 'es' ? 'es-ES' : 'de-DE';
 const date = blok.published_date
   ? new Date(blok.published_date).toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })
   : '';

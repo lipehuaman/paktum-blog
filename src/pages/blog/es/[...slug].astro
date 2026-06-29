@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BlogPost from '../../../storyblok/BlogPost.astro';
+import data from '../../../data/blog-es.json';
+
+export function getStaticPaths() {
+  return (data.posts || []).map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+---
+<BaseLayout
+  title={`${post.meta_title || post.title} · Paktum`}
+  description={post.meta_description || post.excerpt || ''}
+  lang="es"
+  deUrl={`/blog/${post.slug}`}
+  enUrl={post.available_en ? `/blog/en/${post.slug}` : null}
+  esUrl={`/blog/es/${post.slug}`}
+>
+  <BlogPost blok={post} lang="es" />
+  <div class="article-foot"><a class="back-link" href="/blog/es">← Volver al blog</a></div>
+</BaseLayout>

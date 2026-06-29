@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import data from '../../../data/blog-es.json';
+
+const posts = data.posts || [];
+
+function formatDate(d) {
+  return d ? new Date(d).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' }) : '';
+}
+---
+<BaseLayout title="Blog · Paktum" description="Ideas, consejos y novedades sobre patrocinio, de Paktum." lang="es" deUrl="/blog" enUrl="/blog/en" esUrl="/blog/es">
+  <section class="blog-hero container">
+    <p class="eyebrow">Paktum Blog</p>
+    <h1>Patrocinio, <span class="accent">reinventado</span>.</h1>
+    <p class="lead">Ideas, consejos prácticos y novedades para gestionar tu patrocinio.</p>
+  </section>
+  <section class="blog-grid container">
+    {posts.map((post) => (
+      <a class="post-card" href={`/blog/es/${post.slug}`}>
+        {post.cover?.filename && (
+          <div class="post-card-media"><img src={`${post.cover.filename}/m/800x450`} alt={post.cover.alt || post.title} /></div>
+        )}
+        <div class="post-card-body">
+          {post.category && <span class="post-card-cat">{post.category}</span>}
+          <h2>{post.title}</h2>
+          {post.excerpt && <p>{post.excerpt}</p>}
+          <span class="post-card-meta">{formatDate(post.published_date)}</span>
+        </div>
+      </a>
+    ))}
+  </section>
+</BaseLayout>

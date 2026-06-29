@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 const { story } = Astro.props;
 const c = story.content;
 ---
-<BaseLayout title={`${c.meta_title || c.title} · Paktum`} description={c.meta_description || c.excerpt || ''} lang="en" deUrl={`/blog/${story.slug}`} enUrl={`/blog/en/${story.slug}`}>
+<BaseLayout title={`${c.meta_title || c.title} · Paktum`} description={c.meta_description || c.excerpt || ''} lang="en" deUrl={`/blog/${story.slug}`} enUrl={`/blog/en/${story.slug}`} esUrl={`/blog/es/${story.slug}`}>
   <BlogPost blok={c} lang="en" />
   <div class="article-foot"><a class="back-link" href="/blog/en">← Back to blog</a></div>
 </BaseLayout>
