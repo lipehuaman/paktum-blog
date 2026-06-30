@@ -1,4 +1,187 @@
 {
-  "generatedAt": null,
-  "posts": []
+  "generatedAt": "2026-06-30T04:36:58.391Z",
+  "posts": [
+    {
+      "slug": "sponsoring-roi-messen-5-kennzahlen-die-wirklich-zaehlen",
+      "title": "Cómo medir el ROI del patrocinio: 5 indicadores que realmente importan",
+      "excerpt": "Muchas asociaciones no saben si sus acuerdos de patrocinio merecen la pena. Estos cinco indicadores te muestran dónde tiene realmente efecto tu patrocinio.",
+      "category": "",
+      "author": "Paktum Team",
+      "published_date": "2026-06-26 00:00",
+      "cover": {
+        "filename": "https://a.storyblok.com/f/293217950640867/1616x909/318b61fe02/stadium-camp-nou.webp",
+        "alt": "El Camp Nou repleto de gente"
+      },
+      "meta_title": "Cómo medir el ROI del patrocinio: 5 indicadores clave para clubes | Paktum",
+      "meta_description": "¿Realmente vale la pena tu patrocinio? Estos 5 indicadores te muestran el impacto real de tus acuerdos y te ayudan a negociar mejor.",
+      "available_en": true,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Para muchos clubes, el patrocinio es la principal fuente de ingresos. Sin embargo, muy pocos evalúan si un acuerdo funciona realmente. Quien conoce sus cifras, negocia mejor y consigue mantener a los socios adecuados a largo plazo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Visibilidad y alcance",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Cuántas veces se ha visto realmente el logotipo del patrocinador? La presencia en los medios, las impresiones en redes sociales y los asistentes al estadio te ofrecen una imagen realista del alcance, en lugar de basarte únicamente en una corazonada.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Valor por punto de contacto",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Divide el importe del patrocinio entre el número de contactos conseguidos. Así podrás ver de un vistazo si un socio es eficaz en comparación con otros canales.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Tasa de activación",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Un logotipo en la camiseta es solo el principio. Evalúa en qué medida un patrocinador aprovecha su colaboración, por ejemplo, mediante promociones, sorteos o campañas conjuntas. Los socios activos se quedan más tiempo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Tasa de renovación",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Cuántos patrocinadores renuevan su contrato una vez que este vence? Una tasa elevada es la señal más clara de que tus socios están satisfechos.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Carga administrativa",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "El tiempo es dinero. Si pasas horas con hojas de cálculo y correos electrónicos, eso merma tu margen de beneficio. Ahí es precisamente donde entra en juego Paktum, que centraliza la gestión de tus patrocinios en un solo lugar.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Conclusión",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Quien tenga en cuenta estos cinco indicadores tomará mejores decisiones y llevará a cabo negociaciones más sólidas. El primer paso es siempre el mismo: empezar a medir.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }
