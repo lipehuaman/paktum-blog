@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-30T04:36:58.391Z",
+  "generatedAt": "2026-07-10T21:26:36.846Z",
   "posts": [
     {
-      "slug": "sponsoring-roi-messen-5-kennzahlen-die-wirklich-zaehlen",
-      "title": "Cómo medir el ROI del patrocinio: 5 indicadores que realmente importan",
-      "excerpt": "Muchas asociaciones no saben si sus acuerdos de patrocinio merecen la pena. Estos cinco indicadores te muestran dónde tiene realmente efecto tu patrocinio.",
+      "slug": "sponsorenverwaltung-statt-excel-die-6-schritte-migration-fuer-clubs-agenturen",
+      "title": "Gestión de patrocinadores sin Excel: la migración en seis pasos para clubes y agencias (2026)",
+      "excerpt": "Alrededor del 88 % de todas las hojas de cálculo revisadas contienen al menos un error. En el caso de los datos de patrocinio, esto supone un riesgo real para el negocio. Esta guía muestra, en seis pasos, cómo los clubes y las agencias de marketing pueden migrar la gestión de sus patrocinadores de Excel a una solución profesional, incluyendo cifras de resultados de un proyecto de migración real.",
       "category": "",
-      "author": "Paktum Team",
-      "published_date": "2026-06-26 00:00",
+      "author": "Dr. Jens Kaeske",
+      "published_date": "2026-07-10 20:00",
       "cover": {
-        "filename": "https://a.storyblok.com/f/293217950640867/1616x909/318b61fe02/stadium-camp-nou.webp",
-        "alt": "El Camp Nou repleto de gente"
+        "filename": "https://a.storyblok.com/f/293217950640867/1200x630/c4cd188895/ausgedruckte-tabellen-mit-langen-zahlenkolonnen.avif",
+        "alt": "Gestión de patrocinadores sin Excel: la migración en seis pasos para clubes y agencias (2026)"
       },
-      "meta_title": "Cómo medir el ROI del patrocinio: 5 indicadores clave para clubes | Paktum",
-      "meta_description": "¿Realmente vale la pena tu patrocinio? Estos 5 indicadores te muestran el impacto real de tus acuerdos y te ayudan a negociar mejor.",
+      "meta_title": "Gestión de patrocinadores en lugar de Excel: el cambio para los clubes | Paktum",
+      "meta_description": "El 88 % de todas las hojas de cálculo de Excel contienen errores. Así es como los clubes y las agencias migran su gestión de patrocinadores en seis pasos. Con Paktum, se puede planificar en pocas semanas.",
       "available_en": true,
       "body": {
         "type": "doc",
@@ -25,7 +25,791 @@
             },
             "content": [
               {
-                "text": "Para muchos clubes, el patrocinio es la principal fuente de ingresos. Sin embargo, muy pocos evalúan si un acuerdo funciona realmente. Quien conoce sus cifras, negocia mejor y consigue mantener a los socios adecuados a largo plazo.",
+                "text": "¿Qué parte de la gestión de tus patrocinadores se lleva a cabo actualmente en hojas de cálculo de Excel, documentos de Word y bandejas de entrada de correo electrónico? Si la respuesta sincera es «la mayor parte», estás en buena compañía, aunque es una situación arriesgada. Ray Panko, de la Universidad de Hawái, lleva investigando los errores en las hojas de cálculo desde finales de la década de 1990. Su conclusión, que se ha mantenido constante durante décadas, es que alrededor del 88 % de todas las hojas de cálculo auditadas contienen al menos un error.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Esta guía explica, en seis pasos, cómo los clubes profesionales y las agencias de marketing pueden migrar la gestión de sus patrocinadores de Excel a una solución profesional. Las cifras finales proceden de un proyecto de migración real llevado a cabo en un club de fútbol de la 2.ª Bundesliga. Como proveedores de soluciones de gestión de patrocinios, escribimos aquí basándonos en la experiencia práctica de nuestros proyectos de migración. Para obtener una visión general del tema, consulta el ",
+                "type": "text"
+              },
+              {
+                "text": "Guía completa sobre la gestión de patrocinios",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "/blog/sponsoringverwaltung-der-komplette-leitfaden-fuer-vereine-agenturen",
+                      "uuid": "28ac50bb-7ac0-4750-8e73-e51f42f8d3cf",
+                      "anchor": null,
+                      "target": "_self",
+                      "linktype": "story"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "text": "Lo más importante en pocas palabras",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "bullet_list",
+                "content": [
+                  {
+                    "type": "list_item",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Alrededor del 88 % de todas las hojas de cálculo revisadas contienen errores (Panko, Universidad de Hawái). Los datos sobre patrocinios en Excel suponen un riesgo empresarial.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list_item",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Seis pasos para alcanzar el objetivo: inventario, limpieza, procesos, selección de software, funcionamiento en paralelo y automatización.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list_item",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Prevé entre dos y cuatro semanas para el proyecto. La parte más laboriosa es la limpieza de datos, no la parte técnica.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list_item",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Los clientes de referencia ahorran, tras la migración, 40 minutos por contrato y un 85 % del trabajo de facturación. Ya no hay facturas olvidadas.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Por qué Excel ya no es suficiente para la gestión de patrocinadores?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Excel falla en tres aspectos a la hora de gestionar patrocinadores: propensión a los errores, falta de procesos y facturación. La investigación sobre hojas de cálculo de Ray Panko (Universidad de Hawái) viene demostrando desde finales de la década de 1990 que alrededor del 88 % de todas las hojas de cálculo auditadas contienen al menos un error, y que entre el 1 % y el 5 % de todas las celdas con fórmulas son erróneas.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "El verdadero problema es el autoengaño. En un artículo de 2015 (arXiv:1602.02601), Panko describe una enorme brecha en la percepción: Los desarrolladores estimaban que la probabilidad de error de su propia tabla era de alrededor del 18 %, mientras que la tasa real se situaba entre el 86 % y el 88 %. Por lo tanto, consideramos que nuestras tablas son más de cuatro veces más fiables de lo que realmente son.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "type": "image",
+                "attrs": {
+                  "id": 196699474751790,
+                  "alt": "",
+                  "src": "https://a.storyblok.com/f/293217950640867/2560x760/d75fa39695/spreadsheet_wahrnehmung_vs_realitaet.png",
+                  "title": "Fehleranfälligkeit in Excel Spreadsheets: Wahrnehmung vs. Realität",
+                  "source": "",
+                  "copyright": "",
+                  "meta_data": {
+                    "alt": "",
+                    "title": "Fehleranfälligkeit in Excel Spreadsheets: Wahrnehmung vs. Realität",
+                    "source": "",
+                    "copyright": ""
+                  }
+                }
+              },
+              {
+                "text": "La propensión a los errores en las hojas de cálculo de Excel: percepción frente a realidad",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ]
+              },
+              {
+                "type": "hard_break",
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ]
+              },
+              {
+                "text": "Fuente: Ray Panko, Universidad de Hawái (Investigación sobre errores en hojas de cálculo, 1998-2016; autoevaluación: arXiv:1602.02601, 2015)",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Y las consecuencias no son solo teoría. En 2024, la autoridad británica de protección de datos (ICO) impuso una multa de 750 000 libras a la Policía de Irlanda del Norte (PSNI): En una hoja de cálculo oculta de un archivo de Excel publicado figuraban los datos personales de miles de agentes (EuSpRIG Horror Stories). Los datos de contacto de los patrocinadores también se consideran datos personales a efectos del RGPD. Un archivo de Excel que circula por correo electrónico no cuenta ni con controles de acceso ni con un plan de eliminación.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "La comparación directa pone de manifiesto cuáles son los límites estructurales:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "content": [
+              {
+                "type": "tableRow",
+                "content": [
+                  {
+                    "type": "tableHeader",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Criterio",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableHeader",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Excel",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableHeader",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Gestión de patrocinadores (software)",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableRow",
+                "content": [
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Riesgo de error",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "~El 88 % de las tablas contienen errores (Panko)",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Datos maestros verificados, validación al introducirlos",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableRow",
+                "content": [
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Reservas duplicadas",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Sin lógica de reservas",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "El stock se bloquea al realizar la oferta",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableRow",
+                "content": [
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Factura electrónica (EN 16931)",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Prácticamente imposible de llevar a cabo manualmente",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "XRechnung/ZUGFeRD de forma automática",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableRow",
+                "content": [
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Capacidad de gestión de clientes",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Copias de archivos por cliente",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Bases de datos y análisis independientes",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableRow",
+                "content": [
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Derechos de acceso (RGPD)",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Cualquier persona con acceso a los archivos puede verlo todo",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Gestión de derechos basada en roles",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tableRow",
+                "content": [
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Informes",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Evaluación manual por solicitud",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tableCell",
+                    "attrs": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "colwidth": null,
+                      "backgroundColor": null
+                    },
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Cuadros de mando en tiempo real",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Uno de los puntos de esta tabla será obligatorio a partir de 2027: la factura electrónica. En el artículo podrás leer por qué esto acelerará aún más la transición. ",
+                "type": "text"
+              },
+              {
+                "text": "Obligación de facturación electrónica para los clubes deportivos (próximamente)",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ]
+              },
+              {
+                "text": ".",
                 "type": "text"
               }
             ]
@@ -38,7 +822,7 @@
             },
             "content": [
               {
-                "text": "Visibilidad y alcance",
+                "text": "¿Qué necesitas antes de la migración?",
                 "type": "text"
               }
             ]
@@ -50,7 +834,157 @@
             },
             "content": [
               {
-                "text": "¿Cuántas veces se ha visto realmente el logotipo del patrocinador? La presencia en los medios, las impresiones en redes sociales y los asistentes al estadio te ofrecen una imagen realista del alcance, en lugar de basarte únicamente en una corazonada.",
+                "text": "Necesitas cuatro cosas: un análisis sincero de la situación, una persona responsable, apoyo y un plazo realista. Antes de empezar, revisa esta lista de comprobación:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "ordered_list",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Inventario de todos los archivos y fuentes:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Listas de Excel, contratos de Word, buzones de correo electrónico, planes de rotación, unidades compartidas.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Un responsable de inmigración:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " una persona con poder de decisión, no «el equipo de paso».",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Adhesión de la dirección y del departamento de contabilidad:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Sin el departamento financiero, cualquier integración con los procesos de facturación está abocada al fracaso.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Estimación realista del tiempo:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " De dos a cuatro semanas de proyecto, además de las actividades diarias, en función de la calidad de los datos y del volumen del contrato.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Nivel de dificultad:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Algo intermedio. No es un proyecto de informática, pero tampoco es una tarde cualquiera.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Quién se encarga de impulsar el proyecto en tu club? Si no puedes responder a esta pregunta en una sola frase, acláralo antes del paso 1.",
                 "type": "text"
               }
             ]
@@ -63,7 +997,7 @@
             },
             "content": [
               {
-                "text": "Valor por punto de contacto",
+                "text": "Paso 1: Hacer un inventario de todas las fuentes de datos",
                 "type": "text"
               }
             ]
@@ -75,7 +1009,95 @@
             },
             "content": [
               {
-                "text": "Divide el importe del patrocinio entre el número de contactos conseguidos. Así podrás ver de un vistazo si un socio es eficaz en comparación con otros canales.",
+                "text": "Al final de este paso, dispondrás de una lista completa de todos los lugares en los que se almacenan los datos de patrocinio. A continuación te explicamos cómo hacerlo:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "ordered_list",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Recopila todos los archivos de Excel relacionados con los patrocinadores, incluidas las versiones antiguas que se encuentren en unidades locales, en carpetas en la nube y en hojas de cálculo compartidas.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Recopila todos los contratos en formato Word y los archivos PDF, incluidas las copias escaneadas firmadas, que se encuentren únicamente como archivos adjuntos en el correo electrónico.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Revisa los buzones de correo de los comerciales en busca de acuerdos adicionales, promesas de entradas gratuitas y de atención de protocolaria, así como de condiciones confirmadas verbalmente. Es precisamente ahí donde se pierden los derechos, de los que luego ya nadie se acuerda.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Compara los planos de vallas publicitarias, los planos del estadio y las listas de inventario, y distingue qué es lo que realmente existe: vallas fijas, perímetro LED, pantallas de vídeo, zonas de hospitalidad, medios impresos y canales digitales. Solo así sabrás qué espacios publicitarios tienes realmente para vender.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "En el caso de las agencias, hay que tener en cuenta un aspecto más: separa bien el inventario por cliente; de lo contrario, más adelante se mezclarán los derechos y los inventarios.",
                 "type": "text"
               }
             ]
@@ -88,7 +1110,7 @@
             },
             "content": [
               {
-                "text": "Tasa de activación",
+                "text": "Paso 2: Limpiar y consolidar los datos",
                 "type": "text"
               }
             ]
@@ -100,7 +1122,157 @@
             },
             "content": [
               {
-                "text": "Un logotipo en la camiseta es solo el principio. Evalúa en qué medida un patrocinador aprovecha su colaboración, por ejemplo, mediante promociones, sorteos o campañas conjuntas. Los socios activos se quedan más tiempo.",
+                "text": "El objetivo de este paso es obtener una única tabla maestra depurada que sirva de base para la importación. El esfuerzo merece la pena, ya que si se transfieren errores antiguos sin comprobarlos, solo se traslada el caos a un nuevo sistema. Sigue estos pasos:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "ordered_list",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Eliminar duplicados:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " El mismo patrocinador aparece a menudo varias veces, unas veces como «Müller GmbH» y otras como «Mueller». Define un registro como el principal.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Marcar los precios obsoletos:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " ¿Conoces el precio vigente actualmente de cada banda, cada logia y cada paquete de camisetas? Todo lo que no vaya acompañado de un recibo será revisado o eliminado.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Establecer una nomenclatura de inventario uniforme:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " «Bande Nord 12», no se trata del mismo objeto con tres nombres distintos.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Aclarar el estado del contrato:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " activo, en proceso de expiración, rescindido, en negociación. No hay ningún registro sin estado.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Actualizar datos de contacto:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Una llamada aclara más que tres firmas antiguas. Esto se aplica tanto a los interlocutores internos como a la persona de contacto del patrocinador.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Reserva para ello el mayor bloque de tiempo del proyecto, que suele ser un tercio del tiempo total. La prueba práctica: dos muestras aleatorias por categoría (patrocinador, contrato, inventario) superan la comparación con el contrato original.",
                 "type": "text"
               }
             ]
@@ -113,7 +1285,7 @@
             },
             "content": [
               {
-                "text": "Tasa de renovación",
+                "text": "Paso 3: Definir los procesos, desde el presupuesto hasta la factura",
                 "type": "text"
               }
             ]
@@ -125,7 +1297,169 @@
             },
             "content": [
               {
-                "text": "¿Cuántos patrocinadores renuevan su contrato una vez que este vence? Una tasa elevada es la señal más clara de que tus socios están satisfechos.",
+                "text": "De este modo, queda claro por escrito quién hace qué y cuándo: desde la oferta hasta la factura, pasando por el contrato. El mercado exige cada vez más esta profesionalidad. Según el «European Sponsorship Market Overview» de la ESA y Nielsen Sports (marzo de 2026), Alemania fue en 2025 el mayor mercado individual de Europa, con 6.26 mil millones de euros.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "El software refleja los procesos, no los inventa. Por eso, antes de elegir, define:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "ordered_list",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Fase de licitación:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " ¿Quién elabora las ofertas, en qué base de precios y con qué límites de descuento?",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Autorizaciones:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " ¿A partir de qué importe del contrato es necesaria la autorización de la dirección?",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Reservas:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " ¿Cómo se bloquea el stock en la oferta para que no se venda dos veces el mismo lote?",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Celebración del contrato:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " ¿Quién se encarga de registrar el contrato firmado? ¿Quién comprueba las partidas de prestaciones?",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Ciclo de facturación:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " ¿Quién emite las facturas y cuándo, según qué calendario de pagos, y quién se encarga de los recordatorios de pago?",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Limítate a un máximo de dos páginas. Nadie lee un manual de procedimientos demasiado complejo, y si falta uno, cada uno lo sustituye por sus propios hábitos.",
                 "type": "text"
               }
             ]
@@ -138,7 +1472,7 @@
             },
             "content": [
               {
-                "text": "Carga administrativa",
+                "text": "Paso 4: Seleccionar el software y comprobar los requisitos",
                 "type": "text"
               }
             ]
@@ -150,7 +1484,693 @@
             },
             "content": [
               {
-                "text": "El tiempo es dinero. Si pasas horas con hojas de cálculo y correos electrónicos, eso merma tu margen de beneficio. Ahí es precisamente donde entra en juego Paktum, que centraliza la gestión de tus patrocinios en un solo lugar.",
+                "text": "Tras este paso, habrás elegido una solución que, según se ha demostrado, cumple con tus requisitos obligatorios. Comprueba que los proveedores se ajusten a esta lista:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "ordered_list",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Factura electrónica según la norma EN 16931:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Debe ser posible generar y recibir facturas XRechnung y ZUGFeRD. Este requisito será obligatorio por ley a partir de 2027; para más detalles, véase [ENLACE INTERNO: Obligación de facturación electrónica para clubes deportivos → Spoke 6].",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Contabilidad e integración con DATEV:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Los datos de las facturas se transfieren a la contabilidad financiera sin necesidad de introducirlos dos veces.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Compatibilidad con múltiples clientes:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Es obligatorio que las agencias dispongan de inventarios y análisis claramente separados para cada cliente.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Importación desde CRM y Excel:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Los datos de existencias ajustados deben poder transferirse de forma estructurada.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Vinculación entre el plano del estadio y el inventario:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Gestionar visualmente los espacios publicitarios en lugar de tener que desplazarse por las líneas 400 a 900.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Tu control: cada uno de los cinco requisitos te lo mostraron en directo durante la sesión de demostración, no solo te lo prometieron.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Paso 5: Importar datos y realizar el funcionamiento en paralelo",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Al final de este paso, tus datos depurados estarán en el nuevo sistema y se habrá ejecutado dos veces un ciclo completo de registro. El funcionamiento en paralelo es tu garantía: según Panko, entre el 1 % y el 5 % de todas las celdas con fórmulas de las hojas de cálculo contienen errores, y precisamente esos errores antiguos solo se detectan al comparar dos sistemas.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Así es como funciona la importación:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "ordered_list",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Importa primero los datos maestros (patrocinadores, contactos), luego el inventario y, por último, los contratos. Este orden evita que queden vínculos sin asignar.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Importa únicamente los registros de la tabla maestra depurada del paso 2; no incluyas «copias de seguridad» de listas antiguas.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Realiza un ciclo de registro por duplicado: un cierre mensual o un ciclo de facturación se ejecuta en paralelo en Excel y en el nuevo sistema.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Comprueba cada discrepancia por separado. La mayoría de las veces, el error está en la tabla antigua, no en el nuevo sistema.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Documenta las desviaciones. Esta lista te servirá de argumento ante la dirección para demostrar por qué el proyecto merece la pena.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Importante: El funcionamiento en paralelo requiere una fecha de finalización fija; basta con un ciclo. Criterio de aceptación: ambos sistemas proporcionan importes contractuales e importes de factura idénticos para el mismo periodo; cualquier diferencia está justificada.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Paso 6: Activar la automatización e incorporar al equipo",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Ahora se trata de garantizar el funcionamiento continuo: tu equipo trabaja con el nuevo sistema y las tareas rutinarias se ejecutan automáticamente. El mayor potencial reside en la facturación: los análisis de costes de procesos de Billentis (2016/2019) estiman que el ahorro que suponen los procesos de facturación electrónica automatizados oscila entre el 60 % y el 80 % en comparación con la tramitación manual.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Activa la automatización en este orden:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "ordered_list",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Emisión automática de facturas según los planes de pago:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Las cuotas, las facturas de temporada y los servicios especiales se generan puntualmente, sin que nadie tenga que acordarse de ello. El caso práctico muestra cómo funciona esto en la práctica. ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Automatizar la facturación en el ámbito del patrocinio (próximamente)",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ]
+                      },
+                      {
+                        "text": ".",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Cuadros de mando de informes:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Volumen de contratos, partidas pendientes y utilización del inventario de un solo vistazo, en lugar de tener que hacer malabarismos con Excel cada mes.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Gestión de derechos:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " El departamento de ventas se encarga de las ofertas y los contratos, el departamento de contabilidad, de los flujos de caja, y la dirección, de todo. Los becarios ya no modifican las listas de precios.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "No subestimes la incorporación. Planifica una formación específica para cada puesto, no una única para todos. Un comercial necesita funciones diferentes a las de un contable. Además, designa a una persona de contacto interna para las primeras semanas. El indicador más fiable: cuatro semanas después de la puesta en marcha, nadie del equipo ha creado una nueva hoja de Excel con los datos de patrocinio.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Cuáles son los errores más frecuentes que se producen durante la migración?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Hay cuatro errores que se repiten una y otra vez en los proyectos de migración, y todos ellos se pueden evitar. El más costoso es el primero: si, según la investigación de Panko, alrededor del 88 % de todas las hojas de cálculo contienen errores, una importación de datos sin verificar traslada esos errores directamente al nuevo sistema, solo que con un alcance mayor.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Importar datos antiguos sin verificar.",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              },
+              {
+                "text": " La tentación de saltarse el paso 2 y «importarlo todo de una vez» es grande. Después, nadie confía en el nuevo sistema, porque los antiguos errores ahora aparecen allí. Corrige los errores antes de la importación, no después.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Incorporar la migración a la preparación de la temporada.",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              },
+              {
+                "text": " En nuestros proyectos, los plazos casi nunca fracasaban por motivos técnicos, sino por cuestiones de calendario. Un club quería llevar a cabo la importación de datos al mismo tiempo que la preparación de la temporada: el departamento comercial estaba negociando renovaciones, los datos maestros cambiaban a diario y el equipo tuvo que volver a importar los datos tres veces. Realiza la migración en la fase más tranquila del año, normalmente justo después de que termine la temporada.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Incorporar únicamente la oficina administrativa, no el departamento de ventas.",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              },
+              {
+                "text": " Quien se dedica a las ventas debe colaborar con el sistema. Un departamento de ventas que siga redactando ofertas en Word sabotea la base de datos desde el primer día. Involucra a los comerciales ya en el paso 3.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Dejar que Excel siga funcionando sin fecha de finalización.",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              },
+              {
+                "text": " Dos verdades paralelas son peores que una errónea. Establece una fecha límite firme para las listas antiguas, comunícala y, a partir de entonces, archiva los archivos con protección contra escritura.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Qué resultados puedes esperar?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Medible, y además rápido. El mayor esfuerzo manual en la gestión de patrocinadores rara vez reside en la venta, sino en el trabajo que la rodea: recopilar contratos a partir de copias antiguas, contrastar las ofertas con la lista de precios actual y introducir manualmente los datos de las facturas en el sistema de contabilidad. Es precisamente aquí donde entra en juego la migración de Excel a un sistema especializado en la gestión de patrocinadores.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "En el caso de uno de nuestros clientes de referencia, el tiempo dedicado a cada contrato elaborado se redujo en 40 minutos, ya que las ofertas se elaboran a partir de listas de precios revisadas y versionadas, en lugar de plantillas copiadas. El proceso de ventas se acortó un 30 %, ya que la solicitud, la oferta y la aprobación se gestionan en un único sistema, en lugar de enviarse por correo electrónico. Además, el tiempo dedicado a la facturación se redujo en un 85 %, ya que la factura se genera directamente a partir de los datos del contrato. ",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Todo ello sin tener que teclear nada y sin errores de transcripción.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "type": "image",
+                "attrs": {
+                  "id": 196693727457486,
+                  "alt": "Effekte nach der Migration bei einem Referenzkunden: 40 Minuten weniger Aufwand pro erstelltem Vertrag, 30 Prozent kürzerer Vertriebsprozess und 85 Prozent weniger Aufwand bei der Rechnungsstellung.",
+                  "src": "https://a.storyblok.com/f/293217950640867/2760x1020/c2017b41d7/migration_kpis_referenzkunde.png",
+                  "title": "",
+                  "source": "",
+                  "copyright": "",
+                  "meta_data": {
+                    "alt": "Effekte nach der Migration bei einem Referenzkunden: 40 Minuten weniger Aufwand pro erstelltem Vertrag, 30 Prozent kürzerer Vertriebsprozess und 85 Prozent weniger Aufwand bei der Rechnungsstellung.",
+                    "title": "",
+                    "source": "",
+                    "copyright": ""
+                  }
+                }
+              },
+              {
+                "text": "Efectos cuantificables tras la migración del sistema, expresados en cifras. ",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ]
+              },
+              {
+                "type": "hard_break",
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ]
+              },
+              {
+                "text": "Fuente: Datos de clientes de Paktum, temporada 24/25 (proyecto de migración en un cliente de referencia) ",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Qué significa esto en el día a día? Menos traspasos manuales implican menos errores y menos trabajo de corrección. A cambio, queda más tiempo para la actividad principal: captar y fidelizar a los patrocinadores. Sobre todo, la dirección puede ver la ocupación del inventario actualizada diariamente y antes de la temporada, en lugar de después, y puede comercializar de forma específica los espacios libres antes de que se queden sin utilizar.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "El mercado premia esta profesionalización. El informe «European Sponsorship Market Overview», elaborado por la ESA y Nielsen Sports (marzo de 2026), cifra el mercado europeo del patrocinio en 34 450 millones de euros en 2025, de los cuales el 72 % corresponde al deporte. Quienes negocian en este entorno compiten cada vez más con agentes de marketing que cuentan con una estructura profesional. Las agencias con varios clientes deben cumplir unos requisitos específicos; para más información, consulta el artículo. ",
+                "type": "text"
+              },
+              {
+                "text": "Gestión de patrocinadores para agencias de marketing (próximamente)",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ]
+              },
+              {
+                "text": ".",
                 "type": "text"
               }
             ]
@@ -175,8 +2195,2900 @@
             },
             "content": [
               {
-                "text": "Quien tenga en cuenta estos cinco indicadores tomará mejores decisiones y llevará a cabo negociaciones más sólidas. El primer paso es siempre el mismo: empezar a medir.",
+                "text": "Excel era suficiente para empezar, pero ya no basta para una gestión profesional de los patrocinadores. Con seis pasos, desde el inventario hasta la limpieza de datos y el funcionamiento en paralelo, la migración es un proyecto planificable que se lleva a cabo en pocas semanas. Las cifras de nuestros clientes de referencia muestran lo que se puede conseguir después: 40 minutos menos por contrato, un 85 % menos de trabajo de facturación y se acabaron las facturas olvidadas.",
                 "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Si quieres valorar seriamente la posibilidad de cambiarte: reserva una demostración en ",
+                "type": "text"
+              },
+              {
+                "text": "Paktum",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://www.paktum.ch",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": " y trae simplemente tu lista actual de Excel.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Preguntas frecuentes (FAQ)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Cuánto tiempo lleva la migración de Excel a un sistema de gestión de patrocinadores?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Calcula entre dos y cuatro semanas de proyecto, además de las actividades diarias. La mayor parte del tiempo la ocupa la limpieza de datos, no la parte técnica. A esto hay que añadir el funcionamiento en paralelo durante un ciclo completo de registro, como por ejemplo un ciclo de facturación. Los clubes con listas bien mantenidas son más rápidos, mientras que las agencias con varios clientes suelen planificar más bien por lo alto.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Puedo importar directamente mis datos de Excel?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Sí, los sistemas habituales importan los datos de inventario mediante Excel o CSV, a menudo complementados con una importación desde el CRM. Pero «directamente» no significa «sin comprobar»: importa únicamente la tabla maestra depurada del paso 2. Si se importan también duplicados y precios obsoletos, solo se traslada el caos de Excel a un nuevo sistema.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Cuánto cuesta realmente la emisión manual de facturas?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Más de lo que la mayoría cree. Los análisis de costes de procesos de Billentis (2016/2019) estiman unos costes de personal de entre 5 y 15 euros por cada factura en papel emitida manualmente; los procesos automatizados de facturación electrónica reducen esta cifra entre un 60 % y un 80 %. Con docenas de facturas de patrocinadores por temporada, la inversión se amortiza rápidamente; más detalles en el caso práctico. ",
+                "type": "text"
+              },
+              {
+                "text": "Próximamente",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Merece la pena el cambio también para las agencias con varios clientes?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Especialmente en ese ámbito. Las agencias gestionan simultáneamente los inventarios, los contratos y las facturas de varios clubes, y Excel multiplica las fuentes de error con cada cliente. Lo fundamental es la capacidad multicliente: bases de datos independientes, análisis específicos para cada cliente y gestión de derechos propia para cada uno de ellos. Compruébalo expresamente en la cita para la demostración.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Fuentes",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bullet_list",
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Ray Panko, Universidad de Hawái, Investigación sobre errores en hojas de cálculo (lista de publicaciones), consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://panko.com/ssr/Ray'sPublications.html",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://panko.com/ssr/Ray%27sPublications.html",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Ray Panko, «What We Don’t Know About Spreadsheet Errors Today» (EuSpRIG 2015, arXiv:1602.02601), consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://arxiv.org/abs/1602.02601",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://arxiv.org/abs/1602.02601",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "EuSpRIG, «Horror Stories», consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://eusprig.org/research-info/horror-stories/",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://eusprig.org/research-info/horror-stories/",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Billentis, «The E-Invoicing Business Case» (Análisis de costes de procesos 2016/2019), consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://billentis.com/assets/reports/e-invoicing-businesscase.pdf",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://billentis.com/assets/reports/e-invoicing-businesscase.pdf",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "ESA / Nielsen Sports, «European Sponsorship Market Overview» (marzo de 2026), consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://sponsorship.org/european-sponsorship-market-reaches-e34-45bn-in-2025-as-growth-continues-across-all-sectors/",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://sponsorship.org/european-sponsorship-market-reaches-e34-45bn-in-2025-as-growth-continues-across-all-sectors/",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Paktum, datos de clientes del proyecto de migración de un club de la 2.ª Bundesliga, temporada 23/24 (análisis interno)",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "sponsoringverwaltung-der-komplette-leitfaden-fuer-vereine-agenturen",
+      "title": "Gestión de patrocinios: la guía completa para clubes y agencias",
+      "excerpt": "Alemania es el mayor mercado de patrocinio de Europa, con 6.26 mil millones de euros. Sin embargo, gran parte de este proceso se gestiona mediante hojas de cálculo de Excel, contratos de Word y buzones de correo electrónico. Esta guía describe el ciclo de vida completo de la gestión del patrocinio: desde la captación, pasando por el contrato, el inventario y la facturación, hasta la elaboración de informes, incluida la obligación de facturación electrónica a partir de 2027/2028.",
+      "category": "",
+      "author": "Jens Kaeske",
+      "published_date": "",
+      "cover": {
+        "filename": "https://a.storyblok.com/f/293217950640867/1200x630/2836663b65/photo-1762013315117-1c8005ad2b41.avif",
+        "alt": "Gestión de patrocinios: la guía completa para clubes y agencias"
+      },
+      "meta_title": "",
+      "meta_description": "",
+      "available_en": true,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Alemania es, con 6.26 mil millones de euros, el mayor mercado de patrocinio de Europa (ESA/Nielsen Sports, 2026). Sin embargo, gran parte de estos ingresos se gestiona mediante hojas de cálculo de Excel, contratos de Word y buzones de correo electrónico. Ahí es precisamente donde entra en juego la gestión profesional de patrocinios: como un proceso operativo, no como una simple lista de direcciones.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Los resultados de búsqueda en alemán separan el tema de una forma extrañamente clara. Por un lado está «qué herramienta», y por otro «cómo se grava el patrocinio». Casi nadie explica cómo funciona realmente. Esta guía viene a cubrir ese vacío: describe el ciclo de vida completo de la gestión del patrocinio y ofrece enlaces a artículos más detallados para cada etapa.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Estamos desarrollando un sistema de gestión de patrocinios con Paktum. Esta guía se basa en nuestros proyectos de migración y puesta en marcha con clubes y agencias.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "text": "Lo más importante en pocas palabras",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "bullet_list",
+                "content": [
+                  {
+                    "type": "list_item",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "La gestión de patrocinios no es un tema secundario del CRM, sino el proceso operativo que abarca desde la captación, pasando por el contrato, el inventario y la facturación, hasta la elaboración de informes.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list_item",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Alemania es el mayor mercado de patrocinio de Europa, con 6.26 mil millones de euros (ESA/Nielsen 2026), y alrededor del 94 % de las hojas de cálculo revisadas contienen errores (Panko).",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list_item",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "A partir de 2027/2028, las facturas de patrocinio deberán estar estructuradas (obligación de facturación electrónica, Ministerio Federal de Hacienda). Los flujos de trabajo en Excel están llegando a sus límites.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list_item",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "text": "Tras la implantación del cambio, un club de Segunda División ahorró 40 minutos por contrato y redujo en un 85 % el trabajo de facturación (datos de clientes de Paktum, anonimizados).",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Índice",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "ordered_list",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "¿Qué es la gestión de patrocinios?",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/blog/sponsoringverwaltung-der-komplette-leitfaden-fuer-vereine-agenturen",
+                              "uuid": "28ac50bb-7ac0-4750-8e73-e51f42f8d3cf",
+                              "anchor": "was-ist-sponsoringverwaltung",
+                              "target": "_self",
+                              "linktype": "story"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "¿Por qué la gestión de patrocinios será un tema de actualidad en 2026?",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/blog/sponsoringverwaltung-der-komplette-leitfaden-fuer-vereine-agenturen",
+                              "uuid": "28ac50bb-7ac0-4750-8e73-e51f42f8d3cf",
+                              "anchor": "warum-wird-sponsoring-zum-thema",
+                              "target": "_self",
+                              "linktype": "story"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "¿Cómo se lleva a cabo la gestión profesional de los patrocinios?",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "#wie-lauft-professionelle-sponsoringverwaltung-ab-der-lebenszyklus",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "¿Cómo gestionas el inventario de patrocinios y las contraprestaciones?",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "#wie-verwaltest-du-sponsoring-inventar-und-gegenleistungen",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "¿Cómo consigues patrocinadores y redactas los contratos?",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "#wie-gewinnst-du-sponsoren-und-gestaltest-vertrage",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Facturación y obligación de emitir facturas electrónicas: lo que se aplicará a partir de 2027/2028",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "#rechnungsstellung-und-e-rechnungspflicht-was-ab-20272028-gilt",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "¿Cómo mides el valor de tu patrocinio?",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "#wie-misst-du-den-wert-deines-sponsorings-roi-kpis-und-esg",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "¿Excel, un CRM estándar o un software especializado?",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "#excel-standard-crm-oder-spezialsoftware",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Preguntas frecuentes (FAQ)",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "#haufig-gestellte-fragen-faq",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Qué es la gestión de patrocinios?",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "anchor",
+                    "attrs": {
+                      "id": "was-ist-sponsoringverwaltung"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "La gestión del patrocinio es el proceso integral mediante el cual una entidad deportiva adquiere, formaliza contractualmente, ejecuta y liquida sus derechos de patrocinio. Abarca el inventario, el contrato, la facturación y la presentación de informes, y no se limita únicamente al mantenimiento de los contactos. El deporte acapara el 72 % del mercado europeo de patrocinios, es decir, 24 790 millones de euros (ESA/Nielsen Sports, 2026).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "La idea errónea más común es: «Pero si solo es un CRM». Un CRM estándar gestiona contactos y operaciones. Sin embargo, no conoce ni tus cuotas de patrocinio, ni los plazos de rescisión de tus contratos, ni las normas de la factura electrónica. La gestión del patrocinio cubre precisamente este nivel operativo. En este artículo se explica por qué un CRM estándar no es suficiente para ello. ",
+                "type": "text"
+              },
+              {
+                "text": "Por qué un CRM estándar no es suficiente en el ámbito del patrocinio",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./sponsoring-crm-vs-standard-crm",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Hay tres conceptos que aparecen una y otra vez, por lo que a continuación los definimos brevemente:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bullet_list",
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Inventario:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " todos los derechos y espacios comercializables, como vallas publicitarias, camisetas, servicios de hospitalidad o espacios publicitarios en pantallas LED.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Contraprestación:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " lo que tu club le debe concretamente al patrocinador, por ejemplo, ocho metros de valla publicitaria a lo largo de una temporada.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Activación:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " la aplicación efectiva de lo que se vendió.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Una aclaración: el patrocinio no es sinónimo de donación. En el patrocinio hay una contraprestación, mientras que en la donación no. Esto tiene consecuencias fiscales; encontrarás más información al respecto en la sección de preguntas frecuentes.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Por qué la gestión de patrocinios será un tema de actualidad en 2026?",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "anchor",
+                    "attrs": {
+                      "id": "warum-wird-sponsoring-zum-thema"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "El mercado europeo del patrocinio alcanzó en 2025 un volumen de 34 450 millones de euros, lo que supone un aumento del 4,7 % (ESA/Nielsen Sports, 2026). Alemania es, con 6 260 millones de euros, el mayor mercado individual de Europa. Este dinero debe gestionarse de forma profesional.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "type": "image",
+                "attrs": {
+                  "id": 196216912677749,
+                  "alt": "",
+                  "src": "https://a.storyblok.com/f/293217950640867/440x200/8a95c42ffd/pasted-code.png",
+                  "title": "ESA / Nielsen Sports, European Sponsorship Market Overview (März 2026)",
+                  "source": "ESA / Nielsen Sports, European Sponsorship Market Overview (März 2026)",
+                  "copyright": "",
+                  "meta_data": {
+                    "alt": "",
+                    "title": "ESA / Nielsen Sports, European Sponsorship Market Overview (März 2026)",
+                    "source": "ESA / Nielsen Sports, European Sponsorship Market Overview (März 2026)",
+                    "copyright": ""
+                  }
+                }
+              },
+              {
+                "text": "La base es amplia. Alemania cuenta con unos 86 000 clubes deportivos y aproximadamente 29,3 millones de socios, lo que supone un récord y un aumento del 2,18 % (censo del DOSB de 2025, fecha de referencia: 1 de enero de 2025). Para muchos de estos clubes, el patrocinio es fundamental.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "El informe sobre el desarrollo del deporte pone de manifiesto la importancia de este aspecto. El patrocinio, la publicidad y las donaciones representan en conjunto alrededor del 14 % de los ingresos del deporte de base, lo que supone, en términos absolutos, unos 600 millones de euros (Prof. Dr. Christoph Breuer, DSHS de Colonia, declaración ante la Comisión de Deportes del Bundestag alemán, 2024). Ya no se trata de una cifra marginal que se anote de pasada en una tabla.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Llama la atención el vacío existente en el mercado: casi todos los contenidos que aparecen en los resultados de búsqueda están dirigidos a pequeños clubes aficionados. Los clubes profesionales y las agencias que gestionan a varios titulares de derechos quedan, de hecho, desatendidos. Son precisamente estos dos grupos los que más necesitan una estructura.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Cómo se gestiona el patrocinio de forma profesional? (El ciclo de vida)",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "anchor",
+                    "attrs": {
+                      "id": "wie-laeuft-sponsoring-ab"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "La gestión profesional del patrocinio sigue un ciclo de vida de seis etapas: captación, contrato, inventario, activación, facturación y presentación de informes. Cada etapa genera datos para la siguiente. Un club de la 2.ª Bundesliga ahorró, tras la implantación del sistema, 40 minutos por contrato y redujo el proceso de comercialización en un 30 % (datos de clientes de Paktum, temporada 23/24, anonimizados).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Ninguna entrada independiente conecta estos pasos para formar un proceso. Las suites enumeran funciones, los directorios comparan proveedores y las páginas sobre fiscalidad explican la legislación. El valor reside en la cadena:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "ordered_list",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Captación de clientes y cartera de proyectos:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Mostrar las operaciones pendientes, con la probabilidad de cierre y el valor ponderado. Más información al respecto en el apartado sobre contratos.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Contrato:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Reflejar con claridad los plazos de vigencia, los plazos de preaviso y las renovaciones automáticas.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Inventario:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " los derechos vendidos frente a los contingentes disponibles, sin contabilizaciones duplicadas.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Activación:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Lo que se ha vendido, se entrega, con tareas y plazos.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Factura:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Según el plan de pago, conforme a lo establecido y sin necesidad de transcribir.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Informes:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Ingresos garantizados por contrato, previsiones y tasa de ocupación con solo pulsar un botón.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "type": "image",
+                "attrs": {
+                  "id": 196679654596581,
+                  "alt": "Kanban-Board der Sponsoring-Pipeline mit Deal-Karten pro Verhandlungsphase und aufsummiertem gewichtetem Wert",
+                  "src": "https://a.storyblok.com/f/293217950640867/2676x1554/b6222587dc/contract-kanban-de.png",
+                  "title": "",
+                  "source": "",
+                  "copyright": "",
+                  "meta_data": {
+                    "alt": "Kanban-Board der Sponsoring-Pipeline mit Deal-Karten pro Verhandlungsphase und aufsummiertem gewichtetem Wert",
+                    "title": "",
+                    "source": "",
+                    "copyright": ""
+                  }
+                }
+              },
+              {
+                "text": "En nuestros proyectos, el mayor impacto no se produce en una sola fase, sino en las transiciones. Cuando el contrato firmado bloquea automáticamente el inventario, genera tareas y completa el plan de facturación, desaparece el trabajo manual posterior. Esta cadena se puede representar en un sistema de gestión de patrocinios como Paktum en un único lugar, tal y como lo hace la ",
+                "type": "text"
+              },
+              {
+                "text": "Resumen de características",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://www.paktum.ch/features",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": " muestra.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Cómo gestionas el inventario de patrocinios y las contraprestaciones?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Tratas el inventario como si fuera stock: cada banda, cada palco, cada lote de camisetas como una partida con precio, unidad y cupo. Solo así evitas vender dos veces el mismo espacio y no dejas ninguno sin utilizar. Alrededor del 60 % de los clubes deportivos de base reciben patrocinios, con una media de unos 8.400 euros por club (estudio de la VSA, 2026).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Hay tres reglas que marcan la diferencia:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bullet_list",
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Llevar un control de las cuotas por temporada:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Los conceptos «contratado», «reservado» y «disponible» se calculan por temporada, incluso en el caso de las ofertas que se están negociando.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Detectar una contabilización duplicada:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Un mismo puesto solo puede asignarse una vez durante el mismo periodo. La renovación para la temporada siguiente no se considera una doble reserva.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Atar bien los fardos:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Varios derechos en un paquete, pero con un cálculo correcto de la disponibilidad.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "[CAPTURA DE PANTALLA: Planificador visual de ubicaciones en Paktum, plano de un estadio o hipódromo con espacios publicitarios ocupados y libres. Texto alternativo: «Planificador interactivo de ubicaciones con espacios publicitarios ocupados y libres marcados con colores en un plano del recinto»]",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "El planificador visual de ubicación va más allá del estadio. Un club de carreras lo utiliza para representar la pista y las gradas, y un club de baloncesto, para mostrar las pegatinas del suelo. El inventario visible hace que la conversación de venta sea más concreta: el patrocinador ve dónde aparece su logotipo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "La gestión de existencias es un campo especializado con su propia lógica de precios. El artículo profundiza en el tema ",
+                "type": "text"
+              },
+              {
+                "text": "Inventario de patrocinios y comercialización de vallas publicitarias",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./sponsoring-inventar",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Cómo consigues patrocinadores y redactas los contratos?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Los patrocinadores se consiguen mediante un proceso de venta, no como si fueras un suplicante. La oferta, el precio, el proceso de negociación y el cierre siguen las mismas reglas que en la venta clásica. La demanda existe: alrededor del 60 % de los clubes deportivos de base ya reciben patrocinio (estudio de la VSA, 2026). El escollo rara vez es el interés, sino la estructura que hay detrás.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "En un contrato, los detalles son fundamentales para poder planificar:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bullet_list",
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Plazos de vigencia y de preaviso:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " bien definidas, para que las prórrogas no se pierdan entre el resto de mensajes del buzón.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Renovación automática:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Un contrato se prorroga automáticamente durante el plazo establecido; una rescisión presentada a tiempo lo impide.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Acuerdos de trueque:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Las prestaciones en especie, como el equipamiento a cambio de publicidad, se valoran como lo que son: una prestación con valor.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "En el caso de las agencias, se añade una dimensión adicional. Quien gestiona varios clubes o ligas necesita bases de datos separadas para cada cliente y, al mismo tiempo, una visión global. Infront colabora con Paktum como socio de desarrollo para agencias. El artículo sobre ",
+                "type": "text"
+              },
+              {
+                "text": "Gestión de patrocinios para agencias",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./sponsoringverwaltung-agenturen",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Las plantillas, la lógica de precios y todo el proceso, desde el primer contacto hasta el cierre de la venta, se recogen en Pillar ",
+                "type": "text"
+              },
+              {
+                "text": "Encontrar patrocinadores y redactar contratos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./sponsoren-finden",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Facturación y obligación de emitir facturas electrónicas: lo que se aplicará a partir de 2027/2028",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "En el futuro, las facturas de patrocinio deberán estar estructuradas. La ley exige la recepción de facturas electrónicas desde el 1 de enero de 2025. La obligación de emitir estas facturas entrará en vigor a partir del 1 de enero de 2027 para las empresas con una facturación superior a 800 000 euros en el ejercicio anterior, y a partir del 1 de enero de 2028 se aplicará plenamente en el ámbito B2B (Ministerio Federal de Hacienda, datos de marzo de 2026). La norma se denomina EN 16931 y se aplica mediante los formatos XRechnung o ZUGFeRD.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "text": "Nota:",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " Esto no constituye asesoramiento fiscal ni jurídico. Fecha de actualización de la información: 8 de julio de 2026. Consulta tus obligaciones concretas con tu asesor fiscal.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "En la práctica, esto significa que una factura en formato PDF generada desde Word ya no cumple los requisitos. Se requiere un formato estructurado que puedan leer las máquinas. Es prácticamente imposible mantenerlo ordenado de forma manual, sobre todo cuando se trata de docenas de facturas de patrocinadores por temporada.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Un sistema de gestión de patrocinios genera facturas XRechnung y ZUGFeRD según la norma EN 16931, validadas según los conjuntos de reglas oficiales de KoSIT. Como alternativa, envía la factura a herramientas de contabilidad ya existentes, como sevdesk, Lexware o easybill, para que tu asesor fiscal pueda seguir trabajando con su flujo de trabajo habitual.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "En el artículo sobre ",
+                "type": "text"
+              },
+              {
+                "text": "Facturación en el ámbito del patrocinio",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./rechnungsstellung-automatisieren",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ". El artículo sobre la obligación de facturar electrónicamente para las asociaciones explica en detalle lo que esto supone: ",
+                "type": "text"
+              },
+              {
+                "text": "Obligación de facturación electrónica para las asociaciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./e-rechnungspflicht-vereine",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Cómo mides el valor de tu patrocinio? (ROI, KPI y ESG)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "El valor se mide en dos ejes: los ingresos garantizados por contrato y la cartera de proyectos ponderada. El primero muestra lo que ya está asegurado, y el segundo, lo que se prevé que se sume de forma realista. En cuanto a la sostenibilidad, en 2024, 13 de los 18 clubes de la Bundesliga y 3 de los 18 de la Segunda División estaban sujetos a la obligación de presentar informes (KPMG, 2024).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "El gráfico más importante para cualquier consejo de administración es la curva de cartera de pedidos. Muestra los ingresos por temporada que ya están garantizados mediante contratos firmados y en qué punto esta curva desciende. Ese «precipicio» es el verdadero objetivo de ventas: tomar medidas a tiempo, antes de que se produzca el vacío.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Lo importante es la lógica «run-to-term». Un contrato rescindido sigue contabilizándose hasta el final efectivo de su vigencia, ya que los ingresos están garantizados. De este modo, los informes nunca subestiman lo que realmente se ha firmado.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "El impulso para los datos ESG proviene cada vez más de los propios patrocinadores. Las marcas exigen pruebas sobre el alcance, los grupos destinatarios y la sostenibilidad para justificar su compromiso a nivel interno. La CSRD ha sido durante mucho tiempo el marco jurídico para ello. El paquete ómnibus de la UE (2025) ha elevado los umbrales y aplazado los plazos, por lo que, en la actualidad, son muchos menos —prácticamente ninguno— los clubes que están sujetos a la obligación de informar directamente. Antes de tomar cualquier decisión, hay que comprobar la situación definitiva. Esto no afecta a las expectativas de los patrocinadores en cuanto a la presentación de pruebas.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "En el pilar se explica en profundidad cómo establecer los KPI y las previsiones. ",
+                "type": "text"
+              },
+              {
+                "text": "Medir el retorno de la inversión en patrocinio",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./sponsoring-roi-messen",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Excel, un CRM estándar o un software especializado?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "La decisión depende del riesgo de error y de la complejidad del proceso. Excel es barato al principio, pero caro a la larga: alrededor del 94 % de las hojas de cálculo operativas revisadas contienen errores, con una tasa de error por celda del 5,2 % (Ray Panko, Universidad de Hawái). En el caso de los contratos, los contingentes y las facturas, esto no es un simple detalle sin importancia, sino un riesgo empresarial.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "En ese mismo club de Segunda División se detectaron 28 500 euros en facturas que, sencillamente, nunca se habían emitido en la temporada anterior (datos de clientes de Paktum, anonimizados). Ese es precisamente el tipo de dinero que se pierde en listas dispersas.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "<figure>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<svg viewBox=“0 0 680 200” xmlns=“",
+                "type": "text"
+              },
+              {
+                "text": "http://www.w3.org/2000/svg",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "http://www.w3.org/2000/svg",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": "» role=«img» aria-label=«Gráfico de barras horizontal: Tras la implantación de Paktum en un club de Segunda División, el tiempo dedicado por contrato se redujo en 40 minutos, el proceso de venta se acortó un 30 % y el trabajo de facturación se redujo en un 85 %.” font-family=“sans-serif”>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<text x=“0” y=“18” font-size=“15” font-weight=“600” fill=“#888”>Resultados tras la implantación (club de la 2.ª Bundesliga)</text>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<text x=“0” y=“58” font-size=“13” fill=“#888”>Tiempo necesario para redactar un contrato</text>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<rect x=\"0\" y=\"66\" width=\"200\" height=\"22\" rx=\"4\" fill=\"#C4B5FD\"/>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<text x=“212” y=“82” font-size=“13” font-weight=“600” fill=“#888”>−40 min.</text>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<text x=\"0\" y=\"112\" font-size=\"13\" fill=\"#888\">Duración del proceso de venta</text>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<rect x=\"0\" y=\"120\" width=\"126\" height=\"22\" rx=\"4\" fill=\"#A78BFA\"/>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<text x=“138” y=“136” font-size=“13” font-weight=“600” fill=“#888”>−30 %</text>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<text x=“0” y=“166” font-size=“13” fill=“#888”>Gastos de facturación</text>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<rect x=\"0\" y=\"174\" width=\"357\" height=\"22\" rx=\"4\" fill=\"#8B7CF6\"/>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<text x=“369” y=“190” font-size=“13” font-weight=“600” fill=“#888”>−85 %</text>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "</svg>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "<figcaption>Fuente: Datos de clientes de Paktum (anonimizados), club de la 2.ª Bundesliga, temporada 23/24</figcaption>",
+                "type": "text"
+              },
+              {
+                "type": "hard_break"
+              },
+              {
+                "text": "</figure>",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Un CRM estándar es un paso intermedio que, a menudo, no resulta suficiente. Gestiona los contactos y las operaciones, pero no incluye cuotas, ni la lógica de rescisión, ni la facturación electrónica. El artículo explica por qué esto fracasa a nivel operativo. ",
+                "type": "text"
+              },
+              {
+                "text": "CRM de patrocinio frente a CRM estándar",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./sponsoring-crm-vs-standard-crm",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Las ligas profesionales también utilizan ya software especializado. La DEL2 y la Bundesliga de voleibol utilizan Paktum a nivel de liga. La VBL calificó públicamente a Paktum como un «punto de inflexión» y una «navaja suiza» para la gestión de sus socios.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Lo que hay que tener en cuenta a la hora de elegir se explica en el ",
+                "type": "text"
+              },
+              {
+                "text": "Guía para elegir un software de patrocinio",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./sponsoring-software-auswahl",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ". El artículo describe el proceso concreto de transición ",
+                "type": "text"
+              },
+              {
+                "text": "Migrar de Excel a la gestión de patrocinios",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./sponsorenverwaltung-excel-migration",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Preguntas frecuentes (FAQ)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Cuál es la diferencia entre el patrocinio y la donación en una asociación?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "El patrocinio es un intercambio de prestaciones: el patrocinador paga y recibe una contraprestación, como por ejemplo publicidad. Una donación es gratuita, sin contraprestación alguna. La diferencia es relevante a efectos fiscales, ya que el patrocinio suele tener una dimensión económica, mientras que la donación se considera de carácter ideológico.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Debe una asociación emitir una factura y pagar el IVA por el patrocinio?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Por regla general, sí. El patrocinio pasivo, como la mera mención, suele gozar de ventajas fiscales. El patrocinio activo, como la publicidad en vallas o en camisetas, se considera una actividad comercial y está sujeto a un IVA del 19 %. El límite de tributación según el artículo 64, apartado 3, de la Ley General Tributaria (AO) es, desde el 1 de enero de 2026, de 50 000 euros. Esto no constituye asesoramiento fiscal (a fecha de 8 de julio de 2026).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Qué programa es el más adecuado para gestionar los patrocinadores en un club?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Eso depende del tamaño y de la complejidad de los procesos. Es importante contar con una gestión de inventario con protección contra la doble contabilización, una lógica contractual con plazos de preaviso, facturación electrónica conforme a la norma EN 16931 y un sistema de informes fiable. En el caso de las agencias, hay que añadir la capacidad de gestionar múltiples clientes. Los criterios detallados se recogen en el ",
+                "type": "text"
+              },
+              {
+                "text": "Guía para elegir un software de patrocinio",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./sponsoring-software-auswahl",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿Cómo gestiono los contratos de patrocinio, los plazos de vigencia y las contraprestaciones?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Todo centralizado en un solo lugar, sin estar disperso entre Word y los buzones de correo electrónico. Cada contrato debe incluir la duración, el plazo de preaviso y las contraprestaciones acordadas como partidas concretas. La renovación automática y los plazos establecidos evitan que se pasen por alto las renovaciones. De este modo, queda claro en todo momento lo que el club debe a cada persona.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "¿A partir de cuándo será obligatoria la facturación electrónica para las facturas de patrocinio?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "La recepción es obligatoria desde el 1 de enero de 2025. Su expedición será obligatoria a partir del 1 de enero de 2027 para las empresas con una facturación superior a 800 000 euros en el ejercicio anterior, y a partir del 1 de enero de 2028 se aplicará íntegramente en el ámbito B2B (Ministerio Federal de Hacienda, datos de marzo de 2026). En el artículo sobre ",
+                "type": "text"
+              },
+              {
+                "text": "Obligación de facturación electrónica para las asociaciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "./e-rechnungspflicht-vereine",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Conclusión",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "La gestión de patrocinios es mucho más que una lista de contactos. Es el proceso que abarca desde la captación, pasando por el contrato, el inventario y la facturación, hasta la elaboración de informes, y este proceso determina en qué medida aprovechas realmente tu potencial de patrocinio.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Las cifras son claras: un mercado de 34,45 mil millones de euros, alrededor del 94 % de hojas de cálculo con errores y la obligación de facturar electrónicamente, que entrará en vigor en 2027. Quien profesionalice este proceso ahorrará tiempo de forma cuantificable y recuperará dinero que, de otro modo, se quedaría sin aprovechar.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Si quieres estudiar en detalle la posibilidad de cambiarte, reserva una ",
+                "type": "text"
+              },
+              {
+                "text": "Manifestación en Paktum",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://www.paktum.ch",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Seguir leyendo (Hub):",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "bullet_list",
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Migrar de Excel a la gestión de patrocinios",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "./sponsorenverwaltung-excel-migration",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Guía para elegir un software de patrocinio",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "./sponsoring-software-auswahl",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "CRM de patrocinio frente a CRM estándar",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "./sponsoring-crm-vs-standard-crm",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Automatizar la facturación en el ámbito del patrocinio",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "./rechnungsstellung-automatisieren",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Obligación de facturación electrónica para las asociaciones",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "./e-rechnungspflicht-vereine",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Gestión de patrocinios para agencias",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "./sponsoringverwaltung-agenturen",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2,
+              "textAlign": null
+            },
+            "content": [
+              {
+                "text": "Fuentes",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bullet_list",
+            "content": [
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "ESA / Nielsen Sports, «European Sponsorship Market Overview» (marzo de 2026), consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://sponsorship.org/european-sponsorship-market-reaches-e34-45bn-in-2025-as-growth-continues-across-all-sectors/",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://sponsorship.org/european-sponsorship-market-reaches-e34-45bn-in-2025-as-growth-continues-across-all-sectors/",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "DOSB, Encuesta de 2025, consultada el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://cdn.dosb.de/user_upload/www.dosb.de/uber_uns/Bestandserhebung/Bestandserhebung_2025.pdf",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://cdn.dosb.de/user_upload/www.dosb.de/uber_uns/Bestandserhebung/Bestandserhebung_2025.pdf",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Prof. Dr. Christoph Breuer (DSHS de Colonia), Declaración ante la Comisión de Deportes del Bundestag alemán (Informe sobre el desarrollo del deporte), 15 de mayo de 2024, consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://www.bundestag.de/resource/blob/1001910/467e9d5c9a51bce41c6136f04573924f/240515-Prof-Dr-Breuer.pdf",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://www.bundestag.de/resource/blob/1001910/467e9d5c9a51bce41c6136f04573924f/240515-Prof-Dr-Breuer.pdf",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "VSA, Nuevo estudio: El patrocinio como fuente de ingresos para los clubes deportivos de base de Alemania (marzo de 2026), consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://vsa-ev.de/neue-studie-belegt-sponsoring-ist-eine-unverzichtbare-einnahmequelle-fuer-deutschlands-breitensportvereine/",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://vsa-ev.de/neue-studie-belegt-sponsoring-ist-eine-unverzichtbare-einnahmequelle-fuer-deutschlands-breitensportvereine/",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Ministerio Federal de Hacienda (BMF), Preguntas frecuentes sobre la factura electrónica (actualizado en marzo de 2026), consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Ray Panko, Universidad de Hawái, «Investigación sobre errores en hojas de cálculo (Lo que sabemos sobre los errores en hojas de cálculo)», consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://panko.com/ssr/Audits.html",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://panko.com/ssr/Audits.html",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Código Tributario, artículo 64, apartado 3 (límite de tributación, en vigor desde el 1 de enero de 2026), consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://www.gesetze-im-internet.de/ao_1977/__64.html",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://www.gesetze-im-internet.de/ao_1977/__64.html",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "KPMG, «Sostenibilidad en el fútbol: tres factores clave para el éxito de los informes CSRD» (2024), consultado el 8 de julio de 2026, ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "https://kpmg.com/de/de/insights/nachhaltigkeit-esg/nachhaltigkeit-im-fussball-drei-erfolgsfaktoren-fuer-csrd-berichte.html",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://kpmg.com/de/de/insights/nachhaltigkeit-esg/nachhaltigkeit-im-fussball-drei-erfolgsfaktoren-fuer-csrd-berichte.html",
+                              "uuid": null,
+                              "anchor": null,
+                              "target": null,
+                              "linktype": "url"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list_item",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Paktum, datos de clientes de un proyecto en un club de la 2.ª Bundesliga, temporada 23/24 (análisis interno, anonimizado)",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
