@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CategoryFilter from '../../../components/CategoryFilter.astro';
+import BlogPagination from '../../../components/BlogPagination.astro';
 import { useStoryblokApi } from '@storyblok/astro';
+import { getBlogCategories, usedCategories, categoryLabel } from '../../../lib/blogCategories.js';
 
 const storyblokApi = useStoryblokApi();
 const { data } = await storyblokApi.get('cdn/stories', {
@@ -8,8 +11,11 @@ const { data } = await storyblokApi.get('cdn/stories', {
   starts_with: 'blog/',
   content_type: 'blogPost',
   language: 'en',
+  per_page: 100,
 });
 const posts = data.stories.filter((s) => s.content.available_en);
+const categories = await getBlogCategories('en');
+const filterCategories = usedCategories(categories, posts.map((p) => p.content.category));
 
 function formatDate(d) {
   return d ? new Date(d).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' }) : '';
@@ -21,14 +27,15 @@ function formatDate(d) {
     <h1>Sponsoring, <span class="accent">reimagined</span>.</h1>
     <p class="lead">Insights, practical tips and updates on managing your sponsorship.</p>
   </section>
+  <CategoryFilter categories={filterCategories} allLabel="All" />
   <section class="blog-grid container">
     {posts.map((post) => (
-      <a class="post-card" href={`/blog/en/${post.slug}`}>
+      <a class="post-card" href={`/blog/en/${post.slug}`} data-category={post.content.category || ''}>
         {post.content.cover?.filename && (
           <div class="post-card-media"><img src={`${post.content.cover.filename}/m/800x450`} alt={post.content.cover.alt || post.content.title} /></div>
         )}
         <div class="post-card-body">
-          {post.content.category && <span class="post-card-cat">{post.content.category}</span>}
+          {post.content.category && <span class="post-card-cat">{categoryLabel(categories, post.content.category)}</span>}
           <h2>{post.content.title}</h2>
           {post.content.excerpt && <p>{post.content.excerpt}</p>}
           <span class="post-card-meta">{formatDate(post.content.published_date)}</span>
@@ -36,4 +43,5 @@ function formatDate(d) {
       </a>
     ))}
   </section>
+  <BlogPagination prevLabel="Previous" nextLabel="Next" />
 </BaseLayout>

@@ -1,8 +1,13 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CategoryFilter from '../../../components/CategoryFilter.astro';
+import BlogPagination from '../../../components/BlogPagination.astro';
 import data from '../../../data/blog-es.json';
+import { getBlogCategories, usedCategories, categoryLabel } from '../../../lib/blogCategories.js';
 
 const posts = data.posts || [];
+const categories = await getBlogCategories('es');
+const filterCategories = usedCategories(categories, posts.map((p) => p.category));
 
 function formatDate(d) {
   return d ? new Date(d).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' }) : '';
@@ -14,14 +19,15 @@ function formatDate(d) {
     <h1>Patrocinio, <span class="accent">reinventado</span>.</h1>
     <p class="lead">Ideas, consejos prácticos y novedades para gestionar tu patrocinio.</p>
   </section>
+  <CategoryFilter categories={filterCategories} allLabel="Todas" />
   <section class="blog-grid container">
     {posts.map((post) => (
-      <a class="post-card" href={`/blog/es/${post.slug}`}>
+      <a class="post-card" href={`/blog/es/${post.slug}`} data-category={post.category || ''}>
         {post.cover?.filename && (
           <div class="post-card-media"><img src={`${post.cover.filename}/m/800x450`} alt={post.cover.alt || post.title} /></div>
         )}
         <div class="post-card-body">
-          {post.category && <span class="post-card-cat">{post.category}</span>}
+          {post.category && <span class="post-card-cat">{categoryLabel(categories, post.category)}</span>}
           <h2>{post.title}</h2>
           {post.excerpt && <p>{post.excerpt}</p>}
           <span class="post-card-meta">{formatDate(post.published_date)}</span>
@@ -29,4 +35,5 @@ function formatDate(d) {
       </a>
     ))}
   </section>
+  <BlogPagination prevLabel="Anterior" nextLabel="Siguiente" />
 </BaseLayout>

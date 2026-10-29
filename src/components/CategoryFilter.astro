@@ -1,0 +1,13 @@
+---
+// Botones de categoria del indice del blog. El filtrado lo hace el script de BlogPagination.astro.
+interface Props { categories?: { value: string; label: string }[]; allLabel?: string }
+const { categories = [], allLabel = 'Alle' } = Astro.props;
+---
+{categories.length > 0 && (
+  <nav class="cat-filter container" aria-label={allLabel}>
+    <a href="?" class="cat-chip active" data-filter="" aria-current="true">{allLabel}</a>
+    {categories.map((c) => (
+      <a href={`?category=${c.value}`} class="cat-chip" data-filter={c.value}>{c.label}</a>
+    ))}
+  </nav>
+)}

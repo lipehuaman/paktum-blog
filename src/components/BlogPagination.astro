@@ -1,0 +1,99 @@
+---
+// Paginacion + filtro de categorias del indice del blog, en el navegador.
+// Todas las .post-card vienen en el HTML (sin JS se ven todas); el script muestra
+// solo las de la categoria y pagina actual, y guarda ambas en ?category= y ?page=.
+const { prevLabel = 'Zurück', nextLabel = 'Weiter', perPage = 9 } = Astro.props;
+---
+<nav class="pager container" data-per-page={perPage} data-prev={prevLabel} data-next={nextLabel} aria-label="Pagination" hidden></nav>
+<script is:inline>
+  (function () {
+    var pager = document.querySelector('.pager');
+    if (!pager) return;
+    var PER_PAGE = parseInt(pager.getAttribute('data-per-page'), 10) || 9;
+    var chips = Array.prototype.slice.call(document.querySelectorAll('.cat-chip'));
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.post-card'));
+    var params = new URLSearchParams(location.search);
+    var state = { category: params.get('category') || '', page: parseInt(params.get('page'), 10) || 1 };
+    if (!chips.some(function (chip) { return chip.getAttribute('data-filter') === state.category; })) state.category = '';
+
+    function hrefFor(category, page) {
+      var url = new URL(location.href);
+      if (category) url.searchParams.set('category', category); else url.searchParams.delete('category');
+      if (page > 1) url.searchParams.set('page', page); else url.searchParams.delete('page');
+      return url.pathname + url.search;
+    }
+
+    function pageLink(label, page, opts) {
+      var a = document.createElement('a');
+      a.textContent = label;
+      a.href = hrefFor(state.category, page);
+      a.setAttribute('data-page', page);
+      if (opts.ariaLabel) a.setAttribute('aria-label', opts.ariaLabel);
+      if (opts.active) { a.className = 'active'; a.setAttribute('aria-current', 'page'); }
+      if (opts.disabled) { a.setAttribute('aria-disabled', 'true'); a.tabIndex = -1; }
+      return a;
+    }
+
+    function renderPager(pages) {
+      pager.innerHTML = '';
+      pager.hidden = pages <= 1;
+      if (pages <= 1) return;
+      var p = state.page;
+      pager.appendChild(pageLink('←', p - 1, { ariaLabel: pager.getAttribute('data-prev'), disabled: p === 1 }));
+      var last = 0;
+      for (var i = 1; i <= pages; i++) {
+        // Primera, ultima y las vecinas de la actual; el resto se resume con "…"
+        if (i !== 1 && i !== pages && Math.abs(i - p) > 1) continue;
+        if (i - last > 1) {
+          var gap = document.createElement('span');
+          gap.className = 'gap';
+          gap.textContent = '…';
+          pager.appendChild(gap);
+        }
+        pager.appendChild(pageLink(String(i), i, { active: i === p }));
+        last = i;
+      }
+      pager.appendChild(pageLink('→', p + 1, { ariaLabel: pager.getAttribute('data-next'), disabled: p === pages }));
+    }
+
+    function render() {
+      var matching = cards.filter(function (card) {
+        return !state.category || card.getAttribute('data-category') === state.category;
+      });
+      var pages = Math.max(1, Math.ceil(matching.length / PER_PAGE));
+      state.page = Math.min(Math.max(1, state.page), pages);
+      var start = (state.page - 1) * PER_PAGE;
+      cards.forEach(function (card) { card.hidden = true; });
+      matching.slice(start, start + PER_PAGE).forEach(function (card) { card.hidden = false; });
+      chips.forEach(function (chip) {
+        var on = chip.getAttribute('data-filter') === state.category;
+        chip.classList.toggle('active', on);
+        if (on) chip.setAttribute('aria-current', 'true'); else chip.removeAttribute('aria-current');
+      });
+      renderPager(pages);
+      history.replaceState(null, '', hrefFor(state.category, state.page));
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function (e) {
+        e.preventDefault();
+        state.category = chip.getAttribute('data-filter');
+        state.page = 1;
+        render();
+      });
+    });
+
+    pager.addEventListener('click', function (e) {
+      var link = e.target.closest('a[data-page]');
+      if (!link) return;
+      e.preventDefault();
+      if (link.getAttribute('aria-disabled')) return;
+      state.page = parseInt(link.getAttribute('data-page'), 10);
+      render();
+      var top = document.querySelector('.cat-filter') || document.querySelector('.blog-grid');
+      if (top) window.scrollTo({ top: top.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+    });
+
+    render();
+  })();
+</script>
