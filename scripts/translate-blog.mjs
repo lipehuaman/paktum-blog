@@ -105,7 +105,7 @@ async function main() {
   const all = new Set();
   for (const story of stories) {
     const c = story.content || {};
-    [c.title, c.excerpt, c.category, c.meta_title, c.meta_description, c.cover?.alt]
+    [c.title, c.excerpt, c.meta_title, c.meta_description, c.cover?.alt]
       .forEach((s) => { if (typeof s === 'string' && s.trim()) all.add(s); });
     const bodyStrings = [];
     collectStrings(c.body, bodyStrings);
@@ -136,7 +136,7 @@ async function main() {
       slug: story.slug,
       title: tr(c.title),
       excerpt: tr(c.excerpt),
-      category: tr(c.category),
+      category: c.category || '', // clave del datasource (la etiqueta se traduce en la web)
       author: c.author || '',
       published_date: c.published_date || '',
       cover: c.cover?.filename ? { filename: c.cover.filename, alt: tr(c.cover.alt) || tr(c.title) } : null,
