@@ -41,3 +41,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Navigation
+
+The navbar matches paktum.ch. Its styles and script (`src/styles/site-nav.css`, `src/scripts/site-nav.js`) and the texts in `src/layouts/BaseLayout.astro` are copied from Paktum-landing (`site-nav.css`, `site-nav.js`, `scripts/site_nav.py`, `content/home.json`). When the navbar changes there, update it here too.

@@ -13,58 +13,193 @@ const blogIndex = lang === 'en' ? '/blog/en' : lang === 'es' ? '/blog/es' : '/bl
 const ogLocale = lang === 'en' ? 'en_US' : lang === 'es' ? 'es_ES' : 'de_DE';
 const langCode = lang === 'en' ? 'EN' : lang === 'es' ? 'ES' : 'DE';
 
-// Navbar: mismo contenido que el de paktum.ch (Paktum-landing), por idioma
-const NAV: Record<'de' | 'en' | 'es', { home: string; product: string; features: string; value: string; references: string; pricing: string; about: string; cta: string; allFeatures: string; items: [string, string, string][] }> = {
-  de: {
-    home: '/', product: 'Produkt', features: 'Funktionen', value: 'Mehrwerte', references: 'Referenzen',
-    pricing: 'Preise', about: 'Über uns', cta: 'Demo buchen', allFeatures: 'Alle Funktionen ansehen',
-    items: [
-      ['home', 'Home', 'Alles Wichtige auf einen Blick'],
-      ['product-catalog', 'Produktkatalog', 'Rechte, Inventar und Kontingente'],
-      ['position-editor', 'Position Editor', 'Stadionplan und Werbepositionen'],
-      ['partner-crm', 'Partner-CRM', 'Pipeline, Partnerprofil und Kommunikation'],
-      ['contracts', 'Verträge', 'Konditionen, Dokumente und Sachleistungen'],
-      ['activation', 'Umsetzung', 'Umsetzungsaufgaben und Kalender'],
-      ['led-planner', 'LED-Planung', 'Playlists aus gebuchten Sequenzen'],
-      ['invoicing', 'Rechnungen', 'Automatische Rechnungsstellung und Controlling'],
-      ['analytics', 'Analytics', 'Finanzen, Cashflow und Auslastung'],
+import '../styles/site-nav.css';
+
+// Navbar compartido con paktum.ch (Paktum-landing/scripts/site_nav.py): mismos textos y estructura.
+const NAV = {
+  "de": {
+    "nav": [
+      "Funktionen",
+      "Referenzen",
+      "Preise",
+      "Blog",
+      "Über uns"
     ],
+    "allFeatures": "Alle Funktionen",
+    "exploreModules": "Module entdecken",
+    "demo": "Demo buchen",
+    "language": "Sprache wählen",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen",
+    "label": "Hauptnavigation",
+    "modules": [
+      [
+        "Home",
+        "Kennzahlen, Verträge und Aufgaben auf einen Blick."
+      ],
+      [
+        "Produktkatalog",
+        "Rechte, Produkte und Kontingente zentral verwalten."
+      ],
+      [
+        "Position Editor",
+        "Werbeflächen direkt auf dem Stadionplan belegen."
+      ],
+      [
+        "Partner-CRM",
+        "Kontakte, Pipeline und Kommunikation zusammenführen."
+      ],
+      [
+        "Verträge",
+        "Dokumente aus deinen eigenen Vorlagen erstellen."
+      ],
+      [
+        "Umsetzung",
+        "Vereinbarte Leistungen und Termine im Blick behalten."
+      ],
+      [
+        "LED-Planung",
+        "Gebuchte Sequenzen zu Playlists zusammenstellen."
+      ],
+      [
+        "Rechnungen",
+        "Rechnungen aus den hinterlegten Vertragsdaten erstellen."
+      ],
+      [
+        "Analytics",
+        "Umsatz, Cashflow und Auslastung verstehen."
+      ]
+    ]
   },
-  en: {
-    home: '/en', product: 'Product', features: 'Features', value: 'Value', references: 'References',
-    pricing: 'Pricing', about: 'About Us', cta: 'Book a demo', allFeatures: 'See all features',
-    items: [
-      ['home', 'Home', 'Everything that matters at a glance'],
-      ['product-catalog', 'Product Catalog', 'Rights, inventory and quotas'],
-      ['position-editor', 'Position Editor', 'Stadium plan and advertising positions'],
-      ['partner-crm', 'Partner CRM', 'Pipeline, partner records and communication'],
-      ['contracts', 'Contracts', 'Conditions, documents and in-kind benefits'],
-      ['activation', 'Activation', 'Implementation tasks and calendar'],
-      ['led-planner', 'LED Planning', 'Playlists from booked sequences'],
-      ['invoicing', 'Invoicing', 'Automatic invoicing and controlling'],
-      ['analytics', 'Analytics', 'Finances, cash flow and utilization'],
+  "en": {
+    "nav": [
+      "Features",
+      "References",
+      "Pricing",
+      "Blog",
+      "About us"
     ],
+    "allFeatures": "Explore all features",
+    "exploreModules": "Explore the modules",
+    "demo": "Book a demo",
+    "language": "Choose language",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "label": "Main navigation",
+    "modules": [
+      [
+        "Home",
+        "Key figures, contracts and tasks at a glance."
+      ],
+      [
+        "Product catalog",
+        "Manage rights, products and quotas in one place."
+      ],
+      [
+        "Position Editor",
+        "Allocate advertising spaces on your stadium plan."
+      ],
+      [
+        "Partner CRM",
+        "Bring contacts, pipeline and conversations together."
+      ],
+      [
+        "Contracts",
+        "Create documents from your own templates."
+      ],
+      [
+        "Activation",
+        "Keep track of agreed deliverables and deadlines."
+      ],
+      [
+        "LED planning",
+        "Turn booked sequences into ready-to-use playlists."
+      ],
+      [
+        "Invoicing",
+        "Create invoices from the data in your contracts."
+      ],
+      [
+        "Analytics",
+        "Understand revenue, cash flow and inventory utilisation."
+      ]
+    ]
   },
-  es: {
-    home: '/es', product: 'Producto', features: 'Funciones', value: 'Valor', references: 'Referencias',
-    pricing: 'Precios', about: 'Nosotros', cta: 'Reservar una demo', allFeatures: 'Ver todas las funciones',
-    items: [
-      ['home', 'Home', 'Todo lo importante de un vistazo'],
-      ['product-catalog', 'Catálogo', 'Derechos, inventario y cupos'],
-      ['position-editor', 'Position Editor', 'Plano del estadio y posiciones publicitarias'],
-      ['partner-crm', 'CRM de partners', 'Pipeline, ficha de partner y comunicación'],
-      ['contracts', 'Contratos', 'Condiciones, documentos y prestaciones en especie'],
-      ['activation', 'Ejecución', 'Tareas de ejecución y calendario'],
-      ['led-planner', 'Planificación LED', 'Playlists a partir de secuencias reservadas'],
-      ['invoicing', 'Facturación', 'Facturación automática y controlling'],
-      ['analytics', 'Analítica', 'Finanzas, cash flow y ocupación'],
+  "es": {
+    "nav": [
+      "Funciones",
+      "Referencias",
+      "Precios",
+      "Blog",
+      "Nosotros"
     ],
-  },
-};
-const nav = NAV[lang === 'en' ? 'en' : lang === 'es' ? 'es' : 'de'];
+    "allFeatures": "Ver todas las funciones",
+    "exploreModules": "Explorar los módulos",
+    "demo": "Reserva una demo",
+    "language": "Elegir idioma",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú",
+    "label": "Navegación principal",
+    "modules": [
+      [
+        "Inicio",
+        "Indicadores, contratos y tareas de un vistazo."
+      ],
+      [
+        "Catálogo",
+        "Gestiona derechos, productos y cupos en un lugar."
+      ],
+      [
+        "Editor de posiciones",
+        "Asigna espacios publicitarios en el plano del estadio."
+      ],
+      [
+        "CRM de partners",
+        "Conecta contactos, oportunidades y conversaciones."
+      ],
+      [
+        "Contratos",
+        "Crea documentos con tus propias plantillas."
+      ],
+      [
+        "Activación",
+        "Controla los compromisos adquiridos y sus plazos."
+      ],
+      [
+        "Planificación LED",
+        "Convierte las secuencias contratadas en listas de reproducción."
+      ],
+      [
+        "Facturación",
+        "Genera facturas con los datos de tus contratos."
+      ],
+      [
+        "Analítica",
+        "Comprende los ingresos, la tesorería y la ocupación."
+      ]
+    ]
+  }
+} as const;
+const SLUGS = ['home', 'product-catalog', 'position-editor', 'partner-crm', 'contracts', 'activation', 'led-planner', 'invoicing', 'analytics'];
+const LINKEDIN = 'https://www.linkedin.com/company/paktum-software/';
+const navLang = lang === 'en' ? 'en' : lang === 'es' ? 'es' : 'de';
+const nav = NAV[navLang];
 const prefix = lang === 'en' ? '/en' : lang === 'es' ? '/es' : '';
-const homeUrl = SITE + nav.home;
+const homeUrl = SITE + (prefix || '/');
 const featuresUrl = SITE + prefix + '/features';
+const navLinks = [
+  { href: featuresUrl, label: nav.nav[0], dropdown: true },
+  { href: SITE + prefix + '/references', label: nav.nav[1] },
+  { href: SITE + prefix + '/pricing', label: nav.nav[2] },
+  { href: blogIndex, label: nav.nav[3], current: true },
+  { href: SITE + prefix + '/about', label: nav.nav[4] },
+];
+const languages = [
+  { key: 'de', name: 'Deutsch', href: deUrl },
+  { key: 'en', name: 'English', href: enUrl || '/blog/en' },
+  { key: 'es', name: 'Español', href: esUrl || '/blog/es' },
+];
+const demoUrl = SITE + prefix + '/book-a-demo';
 ---
 <!doctype html>
 <html lang={lang}>
@@ -117,52 +252,9 @@ const featuresUrl = SITE + prefix + '/features';
       img { max-width: 100%; display: block; }
       .container { max-width: var(--container); margin: 0 auto; padding: 0 32px; }
       .accent { color: var(--color-primary); font-style: italic; }
-      .navbar { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); width: calc(100% - 48px); max-width: 1400px; z-index: 100; background: rgba(10, 6, 18, 0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 100px; padding: 12px 16px 12px 24px; display: flex; justify-content: space-between; align-items: center; color: white; border: 1px solid rgba(244, 242, 238, 0.12); }
-      .nav-logo { display: flex; align-items: center; text-decoration: none; }
-      .nav-logo img { height: 28px; width: auto; display: block; }
-      .nav-links { display: flex; gap: 32px; list-style: none; }
-      .nav-links a { color: #F4F2EE; text-decoration: none; font-size: 14px; font-weight: 500; letter-spacing: 0.04em; opacity: 0.8; transition: opacity 0.2s; }
-      .nav-links a:hover, .nav-links a.active { opacity: 1; }
-      .nav-links a.active { color: var(--color-primary); }
-      .nav-actions { display: flex; align-items: center; gap: 20px; }
-      .btn { font-family: 'forma-djr-display', var(--font-display); font-weight: 600; font-size: 15px; padding: 14px 24px; border-radius: 100px; border: none; cursor: pointer; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 8px; letter-spacing: 0.01em; text-decoration: none; }
+      .btn { font-family: var(--font-display); font-weight: 600; font-size: 15px; padding: 14px 24px; border-radius: 100px; border: none; cursor: pointer; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 8px; letter-spacing: 0.01em; text-decoration: none; }
       .btn-primary { background: var(--color-primary); color: #fff; }
       .btn-primary:hover { background: var(--color-primary-hover); }
-      .nav-links .nav-dropdown { position: relative; }
-      .nav-links .nav-dropdown > a { display: inline-flex; align-items: center; gap: 6px; }
-      .nav-caret { width: 10px; height: 10px; opacity: 0.6; transition: transform 0.2s, color 0.2s, opacity 0.2s; }
-      .nav-dropdown:hover .nav-caret, .nav-dropdown:focus-within .nav-caret { transform: rotate(180deg); color: var(--color-primary); opacity: 1; }
-      /* padding-top cubre el hueco entre el link y el panel para no perder el hover */
-      .nav-dropdown-menu { position: absolute; top: 100%; left: 50%; padding-top: 22px; transform: translate(-50%, 6px); opacity: 0; visibility: hidden; transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s; z-index: 200; }
-      .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
-      .nav-dropdown-panel { width: 600px; display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: #15101F; border: 1px solid rgba(244,242,238,0.12); border-radius: 16px; padding: 8px; box-shadow: 0 16px 40px rgba(10,6,18,0.45); }
-      .nav-links .nav-dropdown-panel a { opacity: 1; letter-spacing: 0; }
-      .nav-dropdown-item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 12px; border-radius: 10px; transition: background 0.15s; }
-      .nav-dropdown-item:hover, .nav-dropdown-item:focus-visible { background: rgba(255,255,255,0.06); }
-      .nav-dropdown-item .num { font-size: 11px; font-weight: 700; color: var(--color-primary); padding-top: 2px; }
-      .nav-dropdown-item b { display: block; font-size: 14px; font-weight: 600; color: #fff; }
-      .nav-dropdown-item small { display: block; margin-top: 2px; font-size: 12px; font-weight: 400; line-height: 1.35; color: rgba(244,242,238,0.55); }
-      .nav-links .nav-dropdown-all { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; margin-top: 4px; padding: 12px; border-top: 1px solid rgba(244,242,238,0.08); border-radius: 0 0 10px 10px; font-size: 13px; color: var(--color-primary); transition: background 0.15s; }
-      .nav-dropdown-all:hover, .nav-dropdown-all:focus-visible { background: rgba(151,14,251,0.12); }
-      .hamburger-btn { display: none; background: transparent; border: none; cursor: pointer; padding: 8px; width: 40px; height: 40px; flex-direction: column; justify-content: center; align-items: center; gap: 5px; margin-left: 4px; }
-      .hamburger-btn span { width: 22px; height: 2px; background: #fff; border-radius: 2px; transition: all 0.3s ease; display: block; }
-      .hamburger-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-      .hamburger-btn.open span:nth-child(2) { opacity: 0; }
-      .hamburger-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-      .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10, 6, 18, 0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); z-index: 99; padding: 100px 32px 40px; flex-direction: column; overflow-y: auto; }
-      .mobile-menu.open { display: flex; }
-      .mobile-menu ul { list-style: none; display: flex; flex-direction: column; gap: 0; padding: 0; margin: 0; }
-      .mobile-menu li { border-bottom: 1px solid rgba(244, 242, 238, 0.1); }
-      .mobile-menu li:last-child { border-bottom: none; }
-      .mobile-menu a { display: block; color: #fff; text-decoration: none; font-size: 24px; font-weight: 600; letter-spacing: 0.01em; padding: 24px 0; transition: color 0.2s; }
-      .mobile-menu a:hover, .mobile-menu a.active { color: var(--color-primary); }
-      .mobile-menu-cta { margin-top: 40px; }
-      .mobile-menu-cta .btn { width: 100%; justify-content: center; padding: 18px 24px; font-size: 16px; }
-      .mobile-menu .mobile-submenu { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; margin: -12px 0 20px; }
-      .mobile-menu .mobile-submenu li { border-bottom: none; }
-      .mobile-menu .mobile-submenu a { font-size: 15px; font-weight: 500; padding: 9px 0; color: rgba(244,242,238,0.7); }
-      .mobile-menu .mobile-submenu .num { font-size: 11px; font-weight: 700; color: var(--color-primary); margin-right: 6px; }
-      @media (max-width: 340px) { .mobile-menu .mobile-submenu { grid-template-columns: 1fr; } }
       .site-footer { background: var(--color-bg-base); padding: 80px 16px 32px; margin-top: 96px; }
       .footer-container { max-width: var(--container); margin: 0 auto; }
       .footer-cols { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 64px; padding-top: 48px; border-top: 1px solid var(--color-border); margin-bottom: 48px; }
@@ -222,38 +314,9 @@ const featuresUrl = SITE + prefix + '/features';
       .back-link { color: var(--color-primary); text-decoration: none; font-weight: 600; font-size: 15px; }
       .back-link:hover { text-decoration: underline; }
       @media (max-width: 980px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
-      @media (max-width: 640px) { .navbar { top: 12px; width: calc(100% - 24px); padding: 8px 8px 8px 16px; } .navbar .btn-primary { font-size: 12px; padding: 9px 14px; } .nav-logo img { height: 24px; } .nav-actions { gap: 12px; } }
       @media (max-width: 720px) { .footer-cols { grid-template-columns: 1fr; gap: 40px; } }
       @media (max-width: 640px) { .blog-grid { grid-template-columns: 1fr; } .blog-hero { padding-top: 130px; } .article { padding-top: 120px; } .article-body { font-size: 17px; } }
 
-      .nav-lang { position: relative; display: flex; align-items: center; gap: 0; }
-      .lang-trigger { display: inline-flex; align-items: center; gap: 6px; background: transparent; border: none; cursor: pointer; color: rgba(244,242,238,0.7); font-family: inherit; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 8px; border-radius: 100px; transition: color 0.2s; }
-      .lang-trigger:hover { color: #fff; }
-      .lang-trigger .lang-globe { width: 15px; height: 15px; opacity: 0.7; flex-shrink: 0; }
-      .lang-trigger .lang-caret { width: 9px; height: 9px; opacity: 0.6; flex-shrink: 0; transition: transform 0.2s, color 0.2s; }
-      .nav-lang.open .lang-trigger .lang-caret, .lang-floating.open .lang-trigger .lang-caret { transform: rotate(180deg); color: var(--color-primary); opacity: 1; }
-      .lang-menu { position: absolute; top: calc(100% + 8px); right: 0; min-width: 140px; background: #15101F; border: 1px solid rgba(244,242,238,0.12); border-radius: 12px; padding: 4px; display: none; flex-direction: column; box-shadow: 0 12px 32px rgba(10,6,18,0.4); z-index: 200; }
-      .nav-lang.open .lang-menu, .lang-floating.open .lang-menu { display: flex; }
-      .lang-menu .lang-btn { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 12px; border-radius: 8px; color: rgba(244,242,238,0.7); text-decoration: none; font-family: inherit; font-size: 13px; font-weight: 400; letter-spacing: 0; text-transform: none; transition: background 0.15s, color 0.15s; }
-      .lang-menu .lang-btn:hover { background: rgba(255,255,255,0.06); color: #fff; }
-      .lang-menu .lang-btn.active { color: var(--color-primary); font-weight: 500; background: rgba(151,14,251,0.12); }
-      .lang-menu .lang-check { width: 14px; height: 14px; opacity: 0; flex-shrink: 0; }
-      .lang-menu .lang-btn.active .lang-check { opacity: 1; }
-      .lang-floating { position: fixed; bottom: 16px; right: 16px; z-index: 101; display: none; padding: 0; background: transparent; border: none; box-shadow: none; }
-      .lang-floating .lang-trigger { background: rgba(10,6,18,0.92); border: 1px solid rgba(244,242,238,0.15); box-shadow: 0 8px 24px rgba(10,6,18,0.25); padding: 8px 14px; }
-      .lang-floating .lang-menu { top: auto; bottom: calc(100% + 8px); right: 0; }
-      body.menu-open .lang-floating { display: none; }
-      /* Igual que paktum.ch: por debajo de ~1100px el navbar completo no cabe, se pasa al menu hamburguesa */
-      @media (max-width: 1280px) { .nav-links { gap: 24px; } }
-      @media (max-width: 1100px) {
-        .nav-links { display: none; }
-        .nav-actions .nav-lang { display: none !important; }
-        .nav-actions .btn-primary { display: none; }
-        .hamburger-btn { display: flex; }
-        .lang-floating { display: flex; }
-        body.menu-open .lang-floating { display: none; }
-        body.menu-open { overflow: hidden; }
-      }
     
       /* Blog: tablas de los articulos */
       .article-body table { width: 100%; border-collapse: collapse; margin: 36px 0; font-size: 16px; line-height: 1.55; display: block; overflow-x: auto; }
@@ -264,67 +327,48 @@ const featuresUrl = SITE + prefix + '/features';
     </style>
   </head>
   <body>
-    <nav class="navbar">
-      <a href={homeUrl} class="nav-logo"><img src="https://www.paktum.ch/SVG%20Logos/Recurso%206.svg" alt="Paktum" /></a>
-      <ul class="nav-links">
-        <li><a href={`${SITE}${prefix}#product`}>{nav.product}</a></li>
-        <li class="nav-dropdown">
-          <a href={`${SITE}${prefix}#features`} aria-haspopup="true">{nav.features}<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
-          <div class="nav-dropdown-menu">
-            <div class="nav-dropdown-panel">
-              {nav.items.map(([id, name, desc], i) => (
-                <a class="nav-dropdown-item" href={`${featuresUrl}#${id}`}><span class="num">{String(i + 1).padStart(2, '0')}</span><span><b>{name}</b><small>{desc}</small></span></a>
-              ))}
-              <a class="nav-dropdown-all" href={featuresUrl}>{nav.allFeatures}<span aria-hidden="true">→</span></a>
+    <nav class="site-nav" aria-label={nav.label}>
+      <a class="sn-logo" href={homeUrl} aria-label="Paktum"><img src="https://www.paktum.ch/SVG%20Logos/Recurso%206.svg" width="139" height="30" alt="Paktum" /></a>
+      <ul class="sn-links">
+        {navLinks.map((item) => item.dropdown ? (
+          <li class="sn-dropdown">
+            <a href={item.href}>{item.label}<Fragment set:html={'<svg class="sn-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>'} /></a>
+            <div class="sn-panel">
+              <div class="sn-panel-grid">
+                {nav.modules.map(([name, desc], i) => (
+                  <a class="sn-item" href={`${featuresUrl}#${SLUGS[i]}`}><span class="sn-num">{String(i + 1).padStart(2, '0')}</span><span><b>{name}</b><small>{desc}</small></span></a>
+                ))}
+              </div>
+              <a class="sn-all" href={featuresUrl}>{nav.allFeatures}<span class="sn-arrow" aria-hidden="true">↗</span></a>
             </div>
-          </div>
-        </li>
-        <li><a href={`${SITE}${prefix}#stats`}>{nav.value}</a></li>
-        <li><a href={`${SITE}${prefix}/references`}>{nav.references}</a></li>
-        <li><a href={`${SITE}${prefix}/pricing`}>{nav.pricing}</a></li>
-        <li><a href={`${SITE}${prefix}/about`}>{nav.about}</a></li>
-        <li><a href={blogIndex} class="active">Blog</a></li>
+          </li>
+        ) : (
+          <li><a href={item.href} aria-current={item.current ? 'page' : undefined}>{item.label}</a></li>
+        ))}
       </ul>
-      <div class="nav-actions">
-        <div class="nav-lang">
-          <button type="button" class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Sprache waehlen"><svg class="lang-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 16 0 18M12 3c-2.5 2.5-2.5 16 0 18"/></svg><span class="lang-current">{langCode}</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
-          <div class="lang-menu">
-            <a href={deUrl} class={lang === 'de' ? 'lang-btn active' : 'lang-btn'}><span>Deutsch</span><svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></a>
-            <a href={enUrl ? enUrl : '/blog/en'} class={lang === 'en' ? 'lang-btn active' : 'lang-btn'}><span>English</span><svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></a>
-            <a href={esUrl ? esUrl : '/blog/es'} class={lang === 'es' ? 'lang-btn active' : 'lang-btn'}><span>Español</span><svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></a>
+      <div class="sn-actions">
+        <details class="sn-lang">
+          <summary aria-label={nav.language}><Fragment set:html={'<svg class="sn-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/></svg>'} /><span>{langCode}</span><Fragment set:html={'<svg class="sn-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>'} /></summary>
+          <div class="sn-lang-list">
+            {languages.map((l) => (
+              <a href={l.href} class="lang-btn" data-lang={l.key} hreflang={l.key} lang={l.key} aria-current={l.key === navLang ? 'true' : undefined}><span>{l.name}</span>{l.key === navLang ? '✓' : ''}</a>
+            ))}
           </div>
-        </div>
-        <a href={`${SITE}${prefix}/book-a-demo`} class="btn btn-primary">{nav.cta}</a>
-        <button class="hamburger-btn" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        </details>
+        <a class="sn-social" href={LINKEDIN} target="_blank" rel="noopener noreferrer" aria-label="Paktum · LinkedIn"><Fragment set:html={'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04s-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.56V9h3.56ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>'} /></a>
+        <a class="sn-cta" href={demoUrl}>{nav.demo}</a>
+        <button class="sn-menu-btn" type="button" data-open-label={nav.menuOpen} data-close-label={nav.menuClose} aria-label={nav.menuOpen} aria-expanded="false" aria-controls="site-nav-menu"><Fragment set:html={'<svg class="sn-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg class="sn-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 5 14 14M5 19 19 5"/></svg>'} /></button>
       </div>
     </nav>
-    <div class="mobile-menu" id="mobileMenu">
-      <ul>
-        <li><a href={homeUrl}>{nav.product}</a></li>
-        <li><a href={`${SITE}${prefix}#features`}>{nav.features}</a>
-          <ul class="mobile-submenu">
-            {nav.items.map(([id, name], i) => (
-              <li><a href={`${featuresUrl}#${id}`}><span class="num">{String(i + 1).padStart(2, '0')}</span>{name}</a></li>
-            ))}
-          </ul>
-        </li>
-        <li><a href={`${SITE}${prefix}#stats`}>{nav.value}</a></li>
-        <li><a href={`${SITE}${prefix}/references`}>{nav.references}</a></li>
-        <li><a href={`${SITE}${prefix}/pricing`}>{nav.pricing}</a></li>
-        <li><a href={`${SITE}${prefix}/about`}>{nav.about}</a></li>
-        <li><a href={blogIndex} class="active">Blog</a></li>
+    <div class="sn-mobile" id="site-nav-menu" hidden>
+      <a class="sn-cta" href={demoUrl}>{nav.demo}<span class="sn-arrow" aria-hidden="true">↗</span></a>
+      <ul class="sn-mobile-links">
+        {navLinks.map((item) => (<li><a href={item.href} aria-current={item.current ? 'page' : undefined}>{item.label}</a></li>))}
       </ul>
-      <div class="mobile-menu-cta">
-        <a href={`${SITE}${prefix}/book-a-demo`} class="btn btn-primary">{nav.cta}</a>
-      </div>
-    </div>
-    <div class="lang-floating">
-      <button type="button" class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Sprache waehlen"><svg class="lang-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 16 0 18M12 3c-2.5 2.5-2.5 16 0 18"/></svg><span class="lang-current">{langCode}</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
-      <div class="lang-menu">
-            <a href={deUrl} class={lang === 'de' ? 'lang-btn active' : 'lang-btn'}><span>Deutsch</span><svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></a>
-            <a href={enUrl ? enUrl : '/blog/en'} class={lang === 'en' ? 'lang-btn active' : 'lang-btn'}><span>English</span><svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></a>
-            <a href={esUrl ? esUrl : '/blog/es'} class={lang === 'es' ? 'lang-btn active' : 'lang-btn'}><span>Español</span><svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></a>
-      </div>
+      <details class="sn-mobile-modules">
+        <summary>{nav.exploreModules}</summary>
+        <ul>{nav.modules.map(([name], i) => (<li><a href={`${featuresUrl}#${SLUGS[i]}`}><span>{String(i + 1).padStart(2, '0')}</span>{name}</a></li>))}</ul>
+      </details>
     </div>
     <main><slot /></main>
     <footer class="site-footer">
@@ -337,7 +381,7 @@ const featuresUrl = SITE + prefix + '/features';
           <div class="footer-col">
             <h5>Product</h5>
             <ul>
-              <li><a href="https://www.paktum.ch/#features">Features</a></li>
+              <li><a href={featuresUrl}>Features</a></li>
               <li><a href="https://www.paktum.ch/pricing">Pricing</a></li>
               <li><a href={blogIndex}>Blog</a></li>
             </ul>
@@ -353,37 +397,6 @@ const featuresUrl = SITE + prefix + '/features';
         </div>
       </div>
     </footer>
-    <script is:inline>
-      (function () {
-        var hb = document.getElementById('hamburger');
-        var mm = document.getElementById('mobileMenu');
-        if (hb && mm) {
-          var toggleMenu = function () {
-            var open = mm.classList.toggle('open');
-            hb.classList.toggle('open', open);
-            document.body.classList.toggle('menu-open', open);
-            hb.setAttribute('aria-expanded', open ? 'true' : 'false');
-          };
-          hb.addEventListener('click', toggleMenu);
-          mm.querySelectorAll('a').forEach(function (link) {
-            link.addEventListener('click', function () { if (mm.classList.contains('open')) toggleMenu(); });
-          });
-        }
-        document.querySelectorAll('.lang-trigger').forEach(function(trigger){
-          trigger.addEventListener('click', function(e){
-            e.preventDefault(); e.stopPropagation();
-            var container = trigger.closest('.nav-lang, .lang-floating');
-            var willOpen = !container.classList.contains('open');
-            document.querySelectorAll('.nav-lang, .lang-floating').forEach(function(c){ c.classList.remove('open'); });
-            document.querySelectorAll('.lang-trigger').forEach(function(t){ t.setAttribute('aria-expanded','false'); });
-            if (willOpen) { container.classList.add('open'); trigger.setAttribute('aria-expanded','true'); }
-          });
-        });
-        document.addEventListener('click', function(){
-          document.querySelectorAll('.nav-lang, .lang-floating').forEach(function(c){ c.classList.remove('open'); });
-          document.querySelectorAll('.lang-trigger').forEach(function(t){ t.setAttribute('aria-expanded','false'); });
-        });
-      })();
-    </script>
+    <script src="../scripts/site-nav.js"></script>
   </body>
 </html>
